@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:56633/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceForRegisterDB" />
+  <xs:element name="GetData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataUsingDataContract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfServiceForRegisterDB" minOccurs="0" name="composite" nillable="true" type="q1:CompositeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataUsingDataContractResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfServiceForRegisterDB" minOccurs="0" name="GetDataUsingDataContractResult" nillable="true" type="q2:CompositeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewALL">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="viewALLResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="viewALLResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet_Persons.PersonsDataTable" Namespace="http://schemas.datacontract.org/2004/07/ClassLibraryForRegisterDB" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="http://tempuri.org/DataSet_Persons.xsd" name="namespace" />
+            <xs:attribute fixed="PersonsDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteEntry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inputUserID_ToDelete" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteEntryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deleteEntryResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet_Persons.PersonsDataTable" Namespace="http://schemas.datacontract.org/2004/07/ClassLibraryForRegisterDB" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="http://tempuri.org/DataSet_Persons.xsd" name="namespace" />
+            <xs:attribute fixed="PersonsDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEntry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Authority" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="input_ID_toEdit" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEntryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateEntryResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet_Persons.PersonsDataTable" Namespace="http://schemas.datacontract.org/2004/07/ClassLibraryForRegisterDB" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="http://tempuri.org/DataSet_Persons.xsd" name="namespace" />
+            <xs:attribute fixed="PersonsDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddEntry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Authority" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddEntryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddEntryResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet_Persons.PersonsDataTable" Namespace="http://schemas.datacontract.org/2004/07/ClassLibraryForRegisterDB" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="http://tempuri.org/DataSet_Persons.xsd" name="namespace" />
+            <xs:attribute fixed="PersonsDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="verify">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="verifyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="verifyResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet_Persons.PersonsDataTable" Namespace="http://schemas.datacontract.org/2004/07/ClassLibraryForRegisterDB" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="http://tempuri.org/DataSet_Persons.xsd" name="namespace" />
+            <xs:attribute fixed="PersonsDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserViewOnly">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserViewOnlyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserViewOnlyResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet_Persons.PersonsDataTable" Namespace="http://schemas.datacontract.org/2004/07/ClassLibraryForRegisterDB" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="http://tempuri.org/DataSet_Persons.xsd" name="namespace" />
+            <xs:attribute fixed="PersonsDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
