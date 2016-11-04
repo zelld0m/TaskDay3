@@ -195,6 +195,7 @@
     <Compile Include="Admin2.aspx.designer.cs">
       <DependentUpon>Admin2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="DeleteForm2.aspx.cs">
       <DependentUpon>DeleteForm2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

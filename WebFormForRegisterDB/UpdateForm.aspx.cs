@@ -13,15 +13,19 @@ namespace WebFormForRegisterDB
         ServiceReferenceRegisterDb.Service1Client svc = new ServiceReferenceRegisterDb.Service1Client();
         protected void Page_Load(object sender, EventArgs e)
         {
-            GridView1.DataSource = svc.viewALL();
+            GridView1.DataSource = svc.VIEWALLFILES();
             GridView1.DataBind();
         }
 
         protected void BtnUpdate_Click(object sender, EventArgs e)
         {
+            // ERROR // 
             GridView1.DataSource = svc.UpdateEntry(Tb_LastName.Text, Tb_Fname.Text, Tb_UserName.Text, Tb_Password.Text, Tb_Address.Text, Tb_City.Text, Convert.ToInt16(DropDownList1.SelectedValue), Convert.ToInt16(Tb_IDtoUpdate.Text));
-            GridView1.DataBind();
+          
+           // GridView1.DataSource = svc.UpdateAuthority(Tb_AuthorityName.Text, Convert.ToInt16( DropDownList1.Text), Convert.ToInt16(Tb_IDtoUpdate.Text));
+            
             Page_Load(sender, e);
+   
             ClearControls();
         }
 
