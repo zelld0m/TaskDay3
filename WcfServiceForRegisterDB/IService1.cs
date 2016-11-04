@@ -20,7 +20,7 @@ namespace WcfServiceForRegisterDB
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         // TODO: Add your service operations here
-
+        #region Persons
         [OperationContract]
         ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable viewALL();
         [OperationContract]
@@ -34,7 +34,15 @@ namespace WcfServiceForRegisterDB
         [OperationContract]
         ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable UserViewOnly();
 
-     
+        #endregion Person
+        #region Authority
+    //    [OperationContract]
+
+        ClassLibraryForRegisterDB.
+   //     [OperationContract]
+
+
+        #endregion Authority
 
 
     }
