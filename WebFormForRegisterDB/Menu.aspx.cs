@@ -22,7 +22,7 @@ namespace WebFormForRegisterDB
             int x = svc.verify(tb_UserName.Text, Tb_Password.Text).Rows.Count;
 
              ClearControls();
-            if (x > 0)
+            if (x > 0) 
             {
 
                 Server.Transfer("Admin2.aspx", true);
