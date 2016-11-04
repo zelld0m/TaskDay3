@@ -9,31 +9,41 @@ namespace WebFormForRegisterDB
 {
     public partial class _default : System.Web.UI.Page
     {
+
+        int AccessLevel; 
         ServiceReferenceRegisterDb.Service1Client svc = new ServiceReferenceRegisterDb.Service1Client();
         
         protected void Page_Load(object sender, EventArgs e)
         {
+        
 
+           // GridView1.DataSource = svc.VIEWALLFILES().Rows[0][7];
+            GridView1.DataBind();
         }
 
         protected void Btn_ViewALL_Click(object sender, EventArgs e)
         {
+            AccessLevel = Convert.ToInt16(svc.VIEWALLFILES().Rows[0][7]);
 
             int x = svc.verify(tb_UserName.Text, Tb_Password.Text).Rows.Count;
+            //String name = Convert.ToString(svc.VIEWALLFILES().Rows[0]);
 
-             ClearControls();
-            if (x > 0) 
+            ClearControls();
+            if (x > 0)
             {
-
+                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Congrats PASSWORD AND USERNAME: AccessLevel = " + AccessLevel + " = " + x + "');", true);
                 Server.Transfer("Admin2.aspx", true);
-                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Congrats PASSWORD AND USERNAME');", true);
-            }
-            else
-            {
-                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('ERROR PASSWORD AND USERNAME');", true);
-            }
-            
 
+                //  }
+                // else
+                // {
+                //x = svc.(tb_UserName.Text, Tb_Password.Text).Rows.Count;
+
+                //    ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('ERROR PASSWORD AND USERNAME'"+x+");", true);
+                //}
+
+
+            }
         }
         
 

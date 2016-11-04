@@ -165,11 +165,20 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style10">Authority</td>
+                <td class="auto-style10">Authority Name</td>
                 <td class="auto-style4">
+                    <asp:TextBox ID="Tb_AuthorityName" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style9">Access Level</td>
+                <td>
                     <asp:DropDownList ID="DropDownList1" runat="server">
-                        <asp:ListItem Value="Admin"></asp:ListItem>
-                        <asp:ListItem Value="User"></asp:ListItem>
+                        <asp:ListItem Value="1"></asp:ListItem>
+                        <asp:ListItem Value="2"></asp:ListItem>
+                        <asp:ListItem Value="3"></asp:ListItem>
+                        <asp:ListItem Value="4"></asp:ListItem>
+                        <asp:ListItem Selected="True" Value="5"></asp:ListItem>
                     </asp:DropDownList>
                 </td>
             </tr>

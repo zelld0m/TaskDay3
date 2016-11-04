@@ -19,7 +19,7 @@ namespace WebFormForRegisterDB
 
         protected void BtnUpdate_Click(object sender, EventArgs e)
         {
-            GridView1.DataSource = svc.UpdateEntry(Tb_LastName.Text, Tb_Fname.Text, Tb_UserName.Text, Tb_Password.Text, Tb_Address.Text, Tb_City.Text, DropDownList1.Text, Convert.ToInt16(Tb_IDtoUpdate.Text));
+            GridView1.DataSource = svc.UpdateEntry(Tb_LastName.Text, Tb_Fname.Text, Tb_UserName.Text, Tb_Password.Text, Tb_Address.Text, Tb_City.Text, Convert.ToInt16(DropDownList1.SelectedValue), Convert.ToInt16(Tb_IDtoUpdate.Text));
             GridView1.DataBind();
             Page_Load(sender, e);
             ClearControls();

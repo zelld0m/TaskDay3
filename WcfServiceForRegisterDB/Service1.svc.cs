@@ -47,8 +47,16 @@ namespace WcfServiceForRegisterDB
 
 
         #region StartDBcode
+
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonAndAuthorityDataTable dt_personAndAuthority = new DataSet_Persons.PersonAndAuthorityDataTable();
+        ClassLibraryForRegisterDB.DataSet_PersonsTableAdapters.PersonAndAuthorityTableAdapter da_personAndAuthority = new ClassLibraryForRegisterDB.DataSet_PersonsTableAdapters.PersonAndAuthorityTableAdapter();
+
         ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable dt = new ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable();
         ClassLibraryForRegisterDB.DataSet_PersonsTableAdapters.PersonsTableAdapter da = new ClassLibraryForRegisterDB.DataSet_PersonsTableAdapters.PersonsTableAdapter();
+
+        ClassLibraryForRegisterDB.DataSet_Persons._AuthorityLevel_Update_InsertDataTable dt_Authority = new DataSet_Persons._AuthorityLevel_Update_InsertDataTable();
+        ClassLibraryForRegisterDB.DataSet_PersonsTableAdapters.AuthorityLevel_Update_InsertTableAdapter da_Authority = new ClassLibraryForRegisterDB.DataSet_PersonsTableAdapters.AuthorityLevel_Update_InsertTableAdapter();
+
 
         DataSet_Persons.PersonsDataTable IService1.viewALL()
         { 
@@ -64,14 +72,14 @@ namespace WcfServiceForRegisterDB
             throw new NotImplementedException();
         }
 
-        DataSet_Persons.PersonsDataTable IService1.UpdateEntry(string LastName, string FirstName, string UserName, string Password, string Address, string City, String Authority, int input_ID_toEdit)
+        DataSet_Persons.PersonsDataTable IService1.UpdateEntry(string LastName, string FirstName, string UserName, string Password, string Address, string City, int Authority, int input_ID_toEdit)
         {
             da.UpdateRegistrationQuery(LastName, FirstName, UserName, Password, Address, City,Authority, input_ID_toEdit);
             return dt;
             throw new NotImplementedException();
         }
 
-        DataSet_Persons.PersonsDataTable IService1.AddEntry(string LastName, string FirstName, string UserName, string Password, string Address, string City,String Authority)
+        DataSet_Persons.PersonsDataTable IService1.AddEntry(string LastName, string FirstName, string UserName, string Password, string Address, string City,int Authority)
         {
 
             da.InsertRegistrationQuery(LastName, FirstName, UserName, Password, Address, City,Authority);
@@ -79,18 +87,40 @@ namespace WcfServiceForRegisterDB
             throw new NotImplementedException();
         }
 
-        DataSet_Persons.PersonsDataTable IService1.verify(string Username, string Password)
-        {
-
-            da.VerifyUserAndPassword(dt, Username, Password);
-            return dt;
-            throw new NotImplementedException();
-        }
+        
 
         DataSet_Persons.PersonsDataTable IService1.UserViewOnly()
         {
             da.ViewUsersOnly(dt);
             return dt;
+            throw new NotImplementedException();
+        }
+
+        DataSet_Persons._AuthorityLevel_Update_InsertDataTable IService1.UpdateAuthority(string newAuthorityName, int newAccessLevel, int inputID_toUpdate)
+        {
+
+            da_Authority.UpdateAuthorityLevel(dt_Authority, newAuthorityName, newAccessLevel, inputID_toUpdate);
+            throw new NotImplementedException();
+        }
+
+        DataSet_Persons._AuthorityLevel_Update_InsertDataTable IService1.InsertAuthority(string newAuthorityName, int newAccessLevel)
+        {
+
+            da_Authority.InsertNewAuthority(newAuthorityName, newAccessLevel);
+            throw new NotImplementedException();
+        }
+
+        DataSet_Persons.PersonAndAuthorityDataTable IService1.VIEWALLFILES()
+        {
+            da_personAndAuthority.FillViewPersonAndAuthority(dt_personAndAuthority);
+            return dt_personAndAuthority;
+            throw new NotImplementedException();
+        }
+
+        DataSet_Persons.PersonAndAuthorityDataTable IService1.verify(String UserName , String Password)
+        {
+            da_personAndAuthority.FillVerify(dt_personAndAuthority,UserName,Password);
+            return dt_personAndAuthority;
             throw new NotImplementedException();
         }
 

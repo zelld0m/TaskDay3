@@ -18,7 +18,7 @@ namespace WebFormForRegisterDB
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-             svc.AddEntry(Tb_Lname.Text, Tb_FName.Text, Tb_UserName.Text, Tb_Password.Text, Tb_Address.Text, Tb_City.Text,DropDownList1.Text);
+             svc.AddEntry(Tb_Lname.Text, Tb_FName.Text, Tb_UserName.Text, Tb_Password.Text, Tb_Address.Text, Tb_City.Text,Convert.ToInt16( DropDownList1.SelectedValue));
             Page_Load(sender, e);
             ClearControls();
            

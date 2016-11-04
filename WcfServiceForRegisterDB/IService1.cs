@@ -26,23 +26,29 @@ namespace WcfServiceForRegisterDB
         [OperationContract]
         ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable deleteEntry(int inputUserID_ToDelete);
         [OperationContract]
-        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable UpdateEntry(String LastName,String FirstName, String UserName, String Password, String Address, String City ,String Authority,int input_ID_toEdit);
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable UpdateEntry(String LastName,String FirstName, String UserName, String Password, String Address, String City ,int Authority,int input_ID_toEdit);
         [OperationContract]
-        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable AddEntry(String LastName,String FirstName,String UserName,String Password, String Address,String City,String Authority);
-        [OperationContract]
-        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable verify(String Username, String Password);
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable AddEntry(String LastName,String FirstName,String UserName,String Password, String Address,String City,int Authority);
+      
         [OperationContract]
         ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable UserViewOnly();
 
         #endregion Person
         #region Authority
-    //    [OperationContract]
-
-        ClassLibraryForRegisterDB.
-   //     [OperationContract]
-
+        [OperationContract]
+        ClassLibraryForRegisterDB.DataSet_Persons._AuthorityLevel_Update_InsertDataTable UpdateAuthority(String newAuthorityName,int newAccessLevel , int inputID_toUpdate);
+        [OperationContract]
+        ClassLibraryForRegisterDB.DataSet_Persons._AuthorityLevel_Update_InsertDataTable InsertAuthority(String newAuthorityName, int newAccessLevel);
 
         #endregion Authority
+
+        #region VIEWALLTABLE
+        [OperationContract]
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonAndAuthorityDataTable VIEWALLFILES();
+
+        [OperationContract]
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonAndAuthorityDataTable verify(String Username , String Password);
+        #endregion VIEWALLTABLE
 
 
     }

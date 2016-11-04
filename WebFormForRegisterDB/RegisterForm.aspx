@@ -49,6 +49,9 @@
         .auto-style18 {
             width: 147px;
         }
+        .auto-style19 {
+            height: 20px;
+        }
     </style>
 </head>
 <body>
@@ -89,7 +92,7 @@
         </div>
         <table class="auto-style1">
             <tr>
-                <td class="auto-style3">ID</td>
+                <td class="auto-style3">&nbsp;</td>
                 <td>
                     <br />
                 </td>
@@ -127,20 +130,42 @@
             <tr>
                 <td class="auto-style4">City<table class="auto-style9">
                     <tr>
-                        <td>Authority</td>
+                        <td>Authority Name<table class="nav-justified">
+                            <tr>
+                                <td class="auto-style19">Access Level</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style19"></td>
+                            </tr>
+                            </table>
+                        </td>
                     </tr>
                     </table>
                 </td>
                 <td class="auto-style2">
                     <asp:TextBox ID="Tb_City" runat="server"></asp:TextBox>
+                    <table class="nav-justified">
+                        <tr>
+                            <td>
+                                <asp:TextBox ID="Tb_AuthorityName" runat="server"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:DropDownList ID="DropDownList1" runat="server">
+                                    <asp:ListItem Value="1"></asp:ListItem>
+                                    <asp:ListItem Value="2"></asp:ListItem>
+                                    <asp:ListItem Value="3"></asp:ListItem>
+                                    <asp:ListItem Value="4"></asp:ListItem>
+                                    <asp:ListItem Selected="True" Value="5"></asp:ListItem>
+                                </asp:DropDownList>
+                            </td>
+                        </tr>
+                    </table>
                     <table class="auto-style9">
                         <tr>
                             <td class="auto-style14">
-                                <asp:DropDownList ID="DropDownList1" runat="server">
-                                    <asp:ListItem Value="Admin"></asp:ListItem>
-                                    <asp:ListItem Value="User"></asp:ListItem>
-                                </asp:DropDownList>
-                            </td>
+                                &nbsp;</td>
                         </tr>
                     </table>
                 </td>

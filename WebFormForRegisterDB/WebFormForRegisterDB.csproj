@@ -131,10 +131,19 @@
     <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyResponse.datasource">
+    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyResponse.datasource">
+    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">

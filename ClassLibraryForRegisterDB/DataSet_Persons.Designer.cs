@@ -26,7 +26,7 @@ namespace ClassLibraryForRegisterDB {
         
         private PersonsDataTable tablePersons;
         
-        private ViewAllDataTable tableViewAll;
+        private PersonAndAuthorityDataTable tablePersonAndAuthority;
         
         private _AuthorityLevel_Update_InsertDataTable _tableAuthorityLevel_Update_Insert;
         
@@ -61,8 +61,8 @@ namespace ClassLibraryForRegisterDB {
                 if ((ds.Tables["Persons"] != null)) {
                     base.Tables.Add(new PersonsDataTable(ds.Tables["Persons"]));
                 }
-                if ((ds.Tables["ViewAll"] != null)) {
-                    base.Tables.Add(new ViewAllDataTable(ds.Tables["ViewAll"]));
+                if ((ds.Tables["PersonAndAuthority"] != null)) {
+                    base.Tables.Add(new PersonAndAuthorityDataTable(ds.Tables["PersonAndAuthority"]));
                 }
                 if ((ds.Tables["AuthorityLevel_Update/Insert"] != null)) {
                     base.Tables.Add(new _AuthorityLevel_Update_InsertDataTable(ds.Tables["AuthorityLevel_Update/Insert"]));
@@ -99,9 +99,9 @@ namespace ClassLibraryForRegisterDB {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public ViewAllDataTable ViewAll {
+        public PersonAndAuthorityDataTable PersonAndAuthority {
             get {
-                return this.tableViewAll;
+                return this.tablePersonAndAuthority;
             }
         }
         
@@ -185,8 +185,8 @@ namespace ClassLibraryForRegisterDB {
                 if ((ds.Tables["Persons"] != null)) {
                     base.Tables.Add(new PersonsDataTable(ds.Tables["Persons"]));
                 }
-                if ((ds.Tables["ViewAll"] != null)) {
-                    base.Tables.Add(new ViewAllDataTable(ds.Tables["ViewAll"]));
+                if ((ds.Tables["PersonAndAuthority"] != null)) {
+                    base.Tables.Add(new PersonAndAuthorityDataTable(ds.Tables["PersonAndAuthority"]));
                 }
                 if ((ds.Tables["AuthorityLevel_Update/Insert"] != null)) {
                     base.Tables.Add(new _AuthorityLevel_Update_InsertDataTable(ds.Tables["AuthorityLevel_Update/Insert"]));
@@ -230,10 +230,10 @@ namespace ClassLibraryForRegisterDB {
                     this.tablePersons.InitVars();
                 }
             }
-            this.tableViewAll = ((ViewAllDataTable)(base.Tables["ViewAll"]));
+            this.tablePersonAndAuthority = ((PersonAndAuthorityDataTable)(base.Tables["PersonAndAuthority"]));
             if ((initTable == true)) {
-                if ((this.tableViewAll != null)) {
-                    this.tableViewAll.InitVars();
+                if ((this.tablePersonAndAuthority != null)) {
+                    this.tablePersonAndAuthority.InitVars();
                 }
             }
             this._tableAuthorityLevel_Update_Insert = ((_AuthorityLevel_Update_InsertDataTable)(base.Tables["AuthorityLevel_Update/Insert"]));
@@ -254,8 +254,8 @@ namespace ClassLibraryForRegisterDB {
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tablePersons = new PersonsDataTable();
             base.Tables.Add(this.tablePersons);
-            this.tableViewAll = new ViewAllDataTable();
-            base.Tables.Add(this.tableViewAll);
+            this.tablePersonAndAuthority = new PersonAndAuthorityDataTable();
+            base.Tables.Add(this.tablePersonAndAuthority);
             this._tableAuthorityLevel_Update_Insert = new _AuthorityLevel_Update_InsertDataTable();
             base.Tables.Add(this._tableAuthorityLevel_Update_Insert);
         }
@@ -268,7 +268,7 @@ namespace ClassLibraryForRegisterDB {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeViewAll() {
+        private bool ShouldSerializePersonAndAuthority() {
             return false;
         }
         
@@ -337,7 +337,7 @@ namespace ClassLibraryForRegisterDB {
         public delegate void PersonsRowChangeEventHandler(object sender, PersonsRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void ViewAllRowChangeEventHandler(object sender, ViewAllRowChangeEvent e);
+        public delegate void PersonAndAuthorityRowChangeEventHandler(object sender, PersonAndAuthorityRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void _AuthorityLevel_Update_InsertRowChangeEventHandler(object sender, _AuthorityLevel_Update_InsertRowChangeEvent e);
@@ -700,7 +700,7 @@ namespace ClassLibraryForRegisterDB {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class ViewAllDataTable : global::System.Data.TypedTableBase<ViewAllRow> {
+        public partial class PersonAndAuthorityDataTable : global::System.Data.TypedTableBase<PersonAndAuthorityRow> {
             
             private global::System.Data.DataColumn columnP_Id;
             
@@ -722,8 +722,8 @@ namespace ClassLibraryForRegisterDB {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ViewAllDataTable() {
-                this.TableName = "ViewAll";
+            public PersonAndAuthorityDataTable() {
+                this.TableName = "PersonAndAuthority";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -731,7 +731,7 @@ namespace ClassLibraryForRegisterDB {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal ViewAllDataTable(global::System.Data.DataTable table) {
+            internal PersonAndAuthorityDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -748,7 +748,7 @@ namespace ClassLibraryForRegisterDB {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected ViewAllDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected PersonAndAuthorityDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -836,34 +836,34 @@ namespace ClassLibraryForRegisterDB {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ViewAllRow this[int index] {
+            public PersonAndAuthorityRow this[int index] {
                 get {
-                    return ((ViewAllRow)(this.Rows[index]));
+                    return ((PersonAndAuthorityRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ViewAllRowChangeEventHandler ViewAllRowChanging;
+            public event PersonAndAuthorityRowChangeEventHandler PersonAndAuthorityRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ViewAllRowChangeEventHandler ViewAllRowChanged;
+            public event PersonAndAuthorityRowChangeEventHandler PersonAndAuthorityRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ViewAllRowChangeEventHandler ViewAllRowDeleting;
+            public event PersonAndAuthorityRowChangeEventHandler PersonAndAuthorityRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event ViewAllRowChangeEventHandler ViewAllRowDeleted;
+            public event PersonAndAuthorityRowChangeEventHandler PersonAndAuthorityRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddViewAllRow(ViewAllRow row) {
+            public void AddPersonAndAuthorityRow(PersonAndAuthorityRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ViewAllRow AddViewAllRow(string LastName, string FirstName, string Username, string Password, string Address, string City, int AccessLevel, string AuthorityName) {
-                ViewAllRow rowViewAllRow = ((ViewAllRow)(this.NewRow()));
+            public PersonAndAuthorityRow AddPersonAndAuthorityRow(string LastName, string FirstName, string Username, string Password, string Address, string City, int AccessLevel, string AuthorityName) {
+                PersonAndAuthorityRow rowPersonAndAuthorityRow = ((PersonAndAuthorityRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         LastName,
@@ -874,22 +874,22 @@ namespace ClassLibraryForRegisterDB {
                         City,
                         AccessLevel,
                         AuthorityName};
-                rowViewAllRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowViewAllRow);
-                return rowViewAllRow;
+                rowPersonAndAuthorityRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowPersonAndAuthorityRow);
+                return rowPersonAndAuthorityRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ViewAllRow FindByP_Id(int P_Id) {
-                return ((ViewAllRow)(this.Rows.Find(new object[] {
+            public PersonAndAuthorityRow FindByP_Id(int P_Id) {
+                return ((PersonAndAuthorityRow)(this.Rows.Find(new object[] {
                             P_Id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                ViewAllDataTable cln = ((ViewAllDataTable)(base.Clone()));
+                PersonAndAuthorityDataTable cln = ((PersonAndAuthorityDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -897,7 +897,7 @@ namespace ClassLibraryForRegisterDB {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new ViewAllDataTable();
+                return new PersonAndAuthorityDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -957,28 +957,28 @@ namespace ClassLibraryForRegisterDB {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ViewAllRow NewViewAllRow() {
-                return ((ViewAllRow)(this.NewRow()));
+            public PersonAndAuthorityRow NewPersonAndAuthorityRow() {
+                return ((PersonAndAuthorityRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new ViewAllRow(builder);
+                return new PersonAndAuthorityRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(ViewAllRow);
+                return typeof(PersonAndAuthorityRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.ViewAllRowChanged != null)) {
-                    this.ViewAllRowChanged(this, new ViewAllRowChangeEvent(((ViewAllRow)(e.Row)), e.Action));
+                if ((this.PersonAndAuthorityRowChanged != null)) {
+                    this.PersonAndAuthorityRowChanged(this, new PersonAndAuthorityRowChangeEvent(((PersonAndAuthorityRow)(e.Row)), e.Action));
                 }
             }
             
@@ -986,8 +986,8 @@ namespace ClassLibraryForRegisterDB {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.ViewAllRowChanging != null)) {
-                    this.ViewAllRowChanging(this, new ViewAllRowChangeEvent(((ViewAllRow)(e.Row)), e.Action));
+                if ((this.PersonAndAuthorityRowChanging != null)) {
+                    this.PersonAndAuthorityRowChanging(this, new PersonAndAuthorityRowChangeEvent(((PersonAndAuthorityRow)(e.Row)), e.Action));
                 }
             }
             
@@ -995,8 +995,8 @@ namespace ClassLibraryForRegisterDB {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.ViewAllRowDeleted != null)) {
-                    this.ViewAllRowDeleted(this, new ViewAllRowChangeEvent(((ViewAllRow)(e.Row)), e.Action));
+                if ((this.PersonAndAuthorityRowDeleted != null)) {
+                    this.PersonAndAuthorityRowDeleted(this, new PersonAndAuthorityRowChangeEvent(((PersonAndAuthorityRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1004,14 +1004,14 @@ namespace ClassLibraryForRegisterDB {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.ViewAllRowDeleting != null)) {
-                    this.ViewAllRowDeleting(this, new ViewAllRowChangeEvent(((ViewAllRow)(e.Row)), e.Action));
+                if ((this.PersonAndAuthorityRowDeleting != null)) {
+                    this.PersonAndAuthorityRowDeleting(this, new PersonAndAuthorityRowChangeEvent(((PersonAndAuthorityRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveViewAllRow(ViewAllRow row) {
+            public void RemovePersonAndAuthorityRow(PersonAndAuthorityRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -1038,7 +1038,7 @@ namespace ClassLibraryForRegisterDB {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "ViewAllDataTable";
+                attribute2.FixedValue = "PersonAndAuthorityDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1494,25 +1494,25 @@ namespace ClassLibraryForRegisterDB {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class ViewAllRow : global::System.Data.DataRow {
+        public partial class PersonAndAuthorityRow : global::System.Data.DataRow {
             
-            private ViewAllDataTable tableViewAll;
+            private PersonAndAuthorityDataTable tablePersonAndAuthority;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal ViewAllRow(global::System.Data.DataRowBuilder rb) : 
+            internal PersonAndAuthorityRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableViewAll = ((ViewAllDataTable)(this.Table));
+                this.tablePersonAndAuthority = ((PersonAndAuthorityDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int P_Id {
                 get {
-                    return ((int)(this[this.tableViewAll.P_IdColumn]));
+                    return ((int)(this[this.tablePersonAndAuthority.P_IdColumn]));
                 }
                 set {
-                    this[this.tableViewAll.P_IdColumn] = value;
+                    this[this.tablePersonAndAuthority.P_IdColumn] = value;
                 }
             }
             
@@ -1520,10 +1520,10 @@ namespace ClassLibraryForRegisterDB {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string LastName {
                 get {
-                    return ((string)(this[this.tableViewAll.LastNameColumn]));
+                    return ((string)(this[this.tablePersonAndAuthority.LastNameColumn]));
                 }
                 set {
-                    this[this.tableViewAll.LastNameColumn] = value;
+                    this[this.tablePersonAndAuthority.LastNameColumn] = value;
                 }
             }
             
@@ -1532,14 +1532,14 @@ namespace ClassLibraryForRegisterDB {
             public string FirstName {
                 get {
                     try {
-                        return ((string)(this[this.tableViewAll.FirstNameColumn]));
+                        return ((string)(this[this.tablePersonAndAuthority.FirstNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FirstName\' in table \'ViewAll\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'FirstName\' in table \'PersonAndAuthority\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableViewAll.FirstNameColumn] = value;
+                    this[this.tablePersonAndAuthority.FirstNameColumn] = value;
                 }
             }
             
@@ -1548,14 +1548,14 @@ namespace ClassLibraryForRegisterDB {
             public string Username {
                 get {
                     try {
-                        return ((string)(this[this.tableViewAll.UsernameColumn]));
+                        return ((string)(this[this.tablePersonAndAuthority.UsernameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Username\' in table \'ViewAll\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Username\' in table \'PersonAndAuthority\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableViewAll.UsernameColumn] = value;
+                    this[this.tablePersonAndAuthority.UsernameColumn] = value;
                 }
             }
             
@@ -1564,14 +1564,14 @@ namespace ClassLibraryForRegisterDB {
             public string Password {
                 get {
                     try {
-                        return ((string)(this[this.tableViewAll.PasswordColumn]));
+                        return ((string)(this[this.tablePersonAndAuthority.PasswordColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Password\' in table \'ViewAll\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Password\' in table \'PersonAndAuthority\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableViewAll.PasswordColumn] = value;
+                    this[this.tablePersonAndAuthority.PasswordColumn] = value;
                 }
             }
             
@@ -1580,14 +1580,14 @@ namespace ClassLibraryForRegisterDB {
             public string Address {
                 get {
                     try {
-                        return ((string)(this[this.tableViewAll.AddressColumn]));
+                        return ((string)(this[this.tablePersonAndAuthority.AddressColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Address\' in table \'ViewAll\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Address\' in table \'PersonAndAuthority\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableViewAll.AddressColumn] = value;
+                    this[this.tablePersonAndAuthority.AddressColumn] = value;
                 }
             }
             
@@ -1596,14 +1596,14 @@ namespace ClassLibraryForRegisterDB {
             public string City {
                 get {
                     try {
-                        return ((string)(this[this.tableViewAll.CityColumn]));
+                        return ((string)(this[this.tablePersonAndAuthority.CityColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'City\' in table \'ViewAll\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'City\' in table \'PersonAndAuthority\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableViewAll.CityColumn] = value;
+                    this[this.tablePersonAndAuthority.CityColumn] = value;
                 }
             }
             
@@ -1611,10 +1611,10 @@ namespace ClassLibraryForRegisterDB {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int AccessLevel {
                 get {
-                    return ((int)(this[this.tableViewAll.AccessLevelColumn]));
+                    return ((int)(this[this.tablePersonAndAuthority.AccessLevelColumn]));
                 }
                 set {
-                    this[this.tableViewAll.AccessLevelColumn] = value;
+                    this[this.tablePersonAndAuthority.AccessLevelColumn] = value;
                 }
             }
             
@@ -1622,71 +1622,71 @@ namespace ClassLibraryForRegisterDB {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string AuthorityName {
                 get {
-                    return ((string)(this[this.tableViewAll.AuthorityNameColumn]));
+                    return ((string)(this[this.tablePersonAndAuthority.AuthorityNameColumn]));
                 }
                 set {
-                    this[this.tableViewAll.AuthorityNameColumn] = value;
+                    this[this.tablePersonAndAuthority.AuthorityNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsFirstNameNull() {
-                return this.IsNull(this.tableViewAll.FirstNameColumn);
+                return this.IsNull(this.tablePersonAndAuthority.FirstNameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetFirstNameNull() {
-                this[this.tableViewAll.FirstNameColumn] = global::System.Convert.DBNull;
+                this[this.tablePersonAndAuthority.FirstNameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsUsernameNull() {
-                return this.IsNull(this.tableViewAll.UsernameColumn);
+                return this.IsNull(this.tablePersonAndAuthority.UsernameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetUsernameNull() {
-                this[this.tableViewAll.UsernameColumn] = global::System.Convert.DBNull;
+                this[this.tablePersonAndAuthority.UsernameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsPasswordNull() {
-                return this.IsNull(this.tableViewAll.PasswordColumn);
+                return this.IsNull(this.tablePersonAndAuthority.PasswordColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPasswordNull() {
-                this[this.tableViewAll.PasswordColumn] = global::System.Convert.DBNull;
+                this[this.tablePersonAndAuthority.PasswordColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsAddressNull() {
-                return this.IsNull(this.tableViewAll.AddressColumn);
+                return this.IsNull(this.tablePersonAndAuthority.AddressColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetAddressNull() {
-                this[this.tableViewAll.AddressColumn] = global::System.Convert.DBNull;
+                this[this.tablePersonAndAuthority.AddressColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsCityNull() {
-                return this.IsNull(this.tableViewAll.CityColumn);
+                return this.IsNull(this.tablePersonAndAuthority.CityColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetCityNull() {
-                this[this.tableViewAll.CityColumn] = global::System.Convert.DBNull;
+                this[this.tablePersonAndAuthority.CityColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1743,22 +1743,22 @@ namespace ClassLibraryForRegisterDB {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class ViewAllRowChangeEvent : global::System.EventArgs {
+        public class PersonAndAuthorityRowChangeEvent : global::System.EventArgs {
             
-            private ViewAllRow eventRow;
+            private PersonAndAuthorityRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ViewAllRowChangeEvent(ViewAllRow row, global::System.Data.DataRowAction action) {
+            public PersonAndAuthorityRowChangeEvent(PersonAndAuthorityRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public ViewAllRow Row {
+            public PersonAndAuthorityRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -2017,7 +2017,7 @@ SELECT P_Id, LastName, FirstName, Username, Password, Address, City,Authority
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Address", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "Address", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@City", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "City", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@authority", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Authority", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@authority", global::System.Data.SqlDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "Authority", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
             this._commandCollection[3].CommandText = "UPDATE       Persons\r\nSET                LastName = @LastName, FirstName = @First" +
@@ -2325,7 +2325,7 @@ SELECT P_Id, LastName, FirstName, Username, Password, Address, City,Authority
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsertRegistrationQuery(string LastName, string FirstName, string Username, string Password, string Address, string City, string authority) {
+        public virtual int InsertRegistrationQuery(string LastName, string FirstName, string Username, string Password, string Address, string City, object authority) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
             if ((LastName == null)) {
                 throw new global::System.ArgumentNullException("LastName");
@@ -2364,10 +2364,10 @@ SELECT P_Id, LastName, FirstName, Username, Password, Address, City,Authority
                 command.Parameters[5].Value = ((string)(City));
             }
             if ((authority == null)) {
-                command.Parameters[6].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("authority");
             }
             else {
-                command.Parameters[6].Value = ((string)(authority));
+                command.Parameters[6].Value = ((object)(authority));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2462,7 +2462,7 @@ SELECT P_Id, LastName, FirstName, Username, Password, Address, City,Authority
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class ViewAllTableAdapter : global::System.ComponentModel.Component {
+    public partial class PersonAndAuthorityTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -2476,7 +2476,7 @@ SELECT P_Id, LastName, FirstName, Username, Password, Address, City,Authority
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public ViewAllTableAdapter() {
+        public PersonAndAuthorityTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -2573,7 +2573,7 @@ SELECT P_Id, LastName, FirstName, Username, Password, Address, City,Authority
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "ViewAll";
+            tableMapping.DataSetTable = "PersonAndAuthority";
             tableMapping.ColumnMappings.Add("P_Id", "P_Id");
             tableMapping.ColumnMappings.Add("LastName", "LastName");
             tableMapping.ColumnMappings.Add("FirstName", "FirstName");
@@ -2596,20 +2596,30 @@ SELECT P_Id, LastName, FirstName, Username, Password, Address, City,Authority
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT        Persons.*, AuthorityLevel.AuthorityName\r\nFROM            Persons IN" +
                 "NER JOIN\r\n                         AuthorityLevel ON Persons.AccessLevel = Autho" +
                 "rityLevel.AccessLevel";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"SELECT        Persons.P_Id, Persons.LastName, Persons.FirstName, Persons.Username, Persons.Password, Persons.Address, Persons.City, Persons.AccessLevel, 
+                         AuthorityLevel.AuthorityName
+FROM            Persons INNER JOIN
+                         AuthorityLevel ON Persons.AccessLevel = AuthorityLevel.AccessLevel
+WHERE        (Persons.Username = @username) AND (Persons.Password = @password)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@username", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int FillViewPersonAndAuthority(DataSet_Persons.ViewAllDataTable dataTable) {
+        public virtual int FillViewPersonAndAuthority(DataSet_Persons.PersonAndAuthorityDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2622,9 +2632,57 @@ SELECT P_Id, LastName, FirstName, Username, Password, Address, City,Authority
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet_Persons.ViewAllDataTable GetData() {
+        public virtual DataSet_Persons.PersonAndAuthorityDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet_Persons.ViewAllDataTable dataTable = new DataSet_Persons.ViewAllDataTable();
+            DataSet_Persons.PersonAndAuthorityDataTable dataTable = new DataSet_Persons.PersonAndAuthorityDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillVerify(DataSet_Persons.PersonAndAuthorityDataTable dataTable, string username, string password) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((username == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(username));
+            }
+            if ((password == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(password));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet_Persons.PersonAndAuthorityDataTable GetDataBy(string username, string password) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((username == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(username));
+            }
+            if ((password == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(password));
+            }
+            DataSet_Persons.PersonAndAuthorityDataTable dataTable = new DataSet_Persons.PersonAndAuthorityDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
