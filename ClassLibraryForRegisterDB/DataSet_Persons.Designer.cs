@@ -2104,10 +2104,14 @@ SELECT P_Id, LastName, FirstName, Username, Password, Address, City, A_ID FROM P
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
             this._commandCollection[2].CommandText = @"INSERT INTO Persons
-                         (LastName, FirstName, Username, Password, Address, City, AccessLevel, A_ID)
-VALUES        (@LastName,@FirstName,@Username,@Password,@Address,@City,@A_ID);      
+                         (LastName, FirstName, Username, Password, Address, City, A_ID)
+VALUES        (@LastName,@FirstName,@Username,@Password,@Address,@City,@A_ID);     
 SELECT P_Id, LastName, FirstName, Username, Password, Address, City,AccessLevel,A_IA
- FROM Persons";
+ FROM Persons
+
+
+
+";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LastName", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "LastName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FirstName", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "FirstName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2115,7 +2119,7 @@ SELECT P_Id, LastName, FirstName, Username, Password, Address, City,AccessLevel,
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Address", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "Address", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@City", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "City", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@A_ID", global::System.Data.SqlDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "AccessLevel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@A_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "A_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
             this._commandCollection[3].CommandText = "UPDATE       Persons\r\nSET                LastName = @LastName, FirstName = @First" +
@@ -2501,7 +2505,7 @@ SELECT P_Id, LastName, FirstName, Username, Password, Address, City,AccessLevel,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsertRegistrationQuery(string LastName, string FirstName, string Username, string Password, string Address, string City, object A_ID) {
+        public virtual int InsertRegistrationQuery(string LastName, string FirstName, string Username, string Password, string Address, string City, int A_ID) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
             if ((LastName == null)) {
                 throw new global::System.ArgumentNullException("LastName");
@@ -2539,12 +2543,7 @@ SELECT P_Id, LastName, FirstName, Username, Password, Address, City,AccessLevel,
             else {
                 command.Parameters[5].Value = ((string)(City));
             }
-            if ((A_ID == null)) {
-                throw new global::System.ArgumentNullException("A_ID");
-            }
-            else {
-                command.Parameters[6].Value = ((object)(A_ID));
-            }
+            command.Parameters[6].Value = ((int)(A_ID));
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
