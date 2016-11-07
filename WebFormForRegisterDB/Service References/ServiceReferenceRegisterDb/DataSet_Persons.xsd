@@ -106,6 +106,8 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="A_Id" type="xs:int" />
+              <xs:element msdata:Caption="accessLevel1" name="accessLevel" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

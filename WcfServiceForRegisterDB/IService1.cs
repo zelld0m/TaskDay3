@@ -28,12 +28,13 @@ namespace WcfServiceForRegisterDB
         [OperationContract]
         ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable UpdateEntry(String LastName,String FirstName, String UserName, String Password, String Address, String City ,int Authority,int input_ID_toEdit);
         [OperationContract]
-        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable AddEntry(String LastName,String FirstName,String UserName,String Password, String Address,String City,int Authority);
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable AddEntry(String LastName,String FirstName,String UserName,String Password, String Address,String City,int AuthorityLevel);
       
         [OperationContract]
         ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable UserViewOnly();
 
         #endregion Person
+        //----------------------------------------------------------------------
         #region Authority
         [OperationContract]
         ClassLibraryForRegisterDB.DataSet_Persons._AuthorityLevel_Update_InsertDataTable UpdateAuthority(String newAuthorityName,int newAccessLevel , int inputID_toUpdate);
@@ -41,7 +42,7 @@ namespace WcfServiceForRegisterDB
         ClassLibraryForRegisterDB.DataSet_Persons._AuthorityLevel_Update_InsertDataTable InsertAuthority(String newAuthorityName, int newAccessLevel);
 
         #endregion Authority
-
+        //--------------------------------------------------------------------------------------
         #region VIEWALLTABLE
         [OperationContract]
         ClassLibraryForRegisterDB.DataSet_Persons.PersonAndAuthorityDataTable VIEWALLFILES();

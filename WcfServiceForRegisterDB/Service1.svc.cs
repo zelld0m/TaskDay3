@@ -47,7 +47,7 @@ namespace WcfServiceForRegisterDB
 
 
         #region StartDBcode
-
+        #region declarationOfDataAdaptor and Datasets
         ClassLibraryForRegisterDB.DataSet_Persons.PersonAndAuthorityDataTable dt_personAndAuthority = new DataSet_Persons.PersonAndAuthorityDataTable();
         ClassLibraryForRegisterDB.DataSet_PersonsTableAdapters.PersonAndAuthorityTableAdapter da_personAndAuthority = new ClassLibraryForRegisterDB.DataSet_PersonsTableAdapters.PersonAndAuthorityTableAdapter();
 
@@ -57,7 +57,10 @@ namespace WcfServiceForRegisterDB
         ClassLibraryForRegisterDB.DataSet_Persons._AuthorityLevel_Update_InsertDataTable dt_Authority = new DataSet_Persons._AuthorityLevel_Update_InsertDataTable();
         ClassLibraryForRegisterDB.DataSet_PersonsTableAdapters.AuthorityLevel_Update_InsertTableAdapter da_Authority = new ClassLibraryForRegisterDB.DataSet_PersonsTableAdapters.AuthorityLevel_Update_InsertTableAdapter();
 
+        #endregion declarationOfDataAdaptor and Datasets
 
+
+        #region Personal DataTable
         DataSet_Persons.PersonsDataTable IService1.viewALL()
         { 
             da.Fill_ViewALL(dt);
@@ -79,10 +82,10 @@ namespace WcfServiceForRegisterDB
             throw new NotImplementedException();
         }
 
-        DataSet_Persons.PersonsDataTable IService1.AddEntry(string LastName, string FirstName, string UserName, string Password, string Address, string City,int Authority)
+        DataSet_Persons.PersonsDataTable IService1.AddEntry(string LastName, string FirstName, string UserName, string Password, string Address, string City,int AuthorityLevel)
         {
 
-            da.InsertRegistrationQuery(LastName, FirstName, UserName, Password, Address, City,Authority);
+            da.InsertRegistrationQuery(LastName, FirstName, UserName, Password, Address, City,AuthorityLevel);
             return dt;
             throw new NotImplementedException();
         }
@@ -96,6 +99,9 @@ namespace WcfServiceForRegisterDB
             throw new NotImplementedException();
         }
 
+        #endregion PersonalDataTable
+
+        #region AuthorityLEvel
         DataSet_Persons._AuthorityLevel_Update_InsertDataTable IService1.UpdateAuthority(string newAuthorityName, int newAccessLevel, int inputID_toUpdate)
         {
 
@@ -109,21 +115,29 @@ namespace WcfServiceForRegisterDB
             da_Authority.InsertNewAuthority(newAuthorityName, newAccessLevel);
             throw new NotImplementedException();
         }
+        #endregion AuthorityLEvel
 
+
+        #region Personal And Authority View Only
         DataSet_Persons.PersonAndAuthorityDataTable IService1.VIEWALLFILES()
         {
+            
             da_personAndAuthority.FillViewPersonAndAuthority(dt_personAndAuthority);
             return dt_personAndAuthority;
+            
             throw new NotImplementedException();
         }
 
         DataSet_Persons.PersonAndAuthorityDataTable IService1.verify(String UserName , String Password)
         {
-            da_personAndAuthority.FillVerify(dt_personAndAuthority,UserName,Password);
+             da_personAndAuthority.FillVerify(dt_personAndAuthority,UserName,Password);
             return dt_personAndAuthority;
+            
             throw new NotImplementedException();
         }
 
+
+        #endregion Personal And Authority View Only
 
 
 

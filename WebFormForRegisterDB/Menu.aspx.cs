@@ -21,14 +21,16 @@ namespace WebFormForRegisterDB
 
         protected void Btn_ViewALL_Click(object sender, EventArgs e)
         {
-            AccessLevel = Convert.ToInt16(svc.VIEWALLFILES().Rows[0][7]);
-            int x = svc.verify(tb_UserName.Text, Tb_Password.Text).Rows.Count;
+            // AccessLevel = Convert.ToInt16(svc.VIEWALLFILES().Rows[0][7]);
+
+            
+            int x = svc.verify(tb_UserName.Text, Tb_Password.Text).Count;
             
             
             ClearControls();
             if (x > 0)
             {
-                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Congrats PASSWORD AND USERNAME: AccessLevel = " + AccessLevel + " = " + x + "');", true);
+                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Congrats PASSWORD AND USERNAME: AccessLevel = " + AccessLevel + " = "  + "');", true);
                 Server.Transfer("Admin2.aspx", true);
                 }
                 else

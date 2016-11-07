@@ -127,7 +127,7 @@
         <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="Authority" type="xs:int" />
+        <xs:element minOccurs="0" name="AuthorityLevel" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
