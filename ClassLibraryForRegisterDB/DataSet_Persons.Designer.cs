@@ -2780,9 +2780,10 @@ FROM            Persons INNER JOIN
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"SELECT        Persons.P_Id, Persons.Username, Persons.Password, AuthorityLevel.A_Id, AuthorityLevel.AuthorityName, AuthorityLevel.AccessLevel AS Expr1
+            this._commandCollection[1].CommandText = @"SELECT        Persons.P_Id, Persons.LastName, Persons.FirstName, Persons.Username, Persons.Password, Persons.Address, Persons.City, Persons.A_ID, 
+                         AuthorityLevel.A_Id AS AA_ID, AuthorityLevel.AuthorityName, AuthorityLevel.AccessLevel
 FROM            Persons INNER JOIN
-                         AuthorityLevel ON Persons.AccessLevel = AuthorityLevel.A_Id
+                         AuthorityLevel ON Persons.A_ID = AuthorityLevel.A_Id
 WHERE        (Persons.Username = @username) AND (Persons.Password = @password)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@username", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));

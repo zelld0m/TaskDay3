@@ -13,8 +13,8 @@ namespace WebFormForRegisterDB
         ServiceReferenceRegisterDb.Service1Client svc = new ServiceReferenceRegisterDb.Service1Client();
         protected void Page_Load(object sender, EventArgs e)
         {
-           // GridView1.DataSource = svc.VIEWALLFILES();
-            //GridView1.DataBind();
+            GridView1.DataSource = svc.VIEWALLFILES();
+            GridView1.DataBind();
         }
 
         protected void BtnUpdate_Click(object sender, EventArgs e)

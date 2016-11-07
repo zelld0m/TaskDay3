@@ -31,6 +31,9 @@ namespace WebFormForRegisterDB
             if (x > 0)
             {
                 ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Congrats PASSWORD AND USERNAME: AccessLevel = " + AccessLevel + " = "  + "');", true);
+               
+                Response.Write("<script>alert('Congrats PASSWORD AND USERNAME: AccessLevel = " + AccessLevel + " ');</script>");
+
                 Server.Transfer("Admin2.aspx", true);
                 }
                 else

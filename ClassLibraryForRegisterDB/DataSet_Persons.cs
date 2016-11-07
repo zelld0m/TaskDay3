@@ -16,6 +16,10 @@
 
 namespace ClassLibraryForRegisterDB.DataSet_PersonsTableAdapters
 {
+    partial class PersonAndAuthorityTableAdapter
+    {
+    }
+
     partial class AuthorityLevel_Update_InsertTableAdapter
     {
     }

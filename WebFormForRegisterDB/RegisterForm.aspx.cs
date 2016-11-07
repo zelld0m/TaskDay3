@@ -12,7 +12,7 @@ namespace WebFormForRegisterDB
         ServiceReferenceRegisterDb.Service1Client svc = new ServiceReferenceRegisterDb.Service1Client();
         protected void Page_Load(object sender, EventArgs e)
         {
-            GridView1.DataSource = svc.viewALL();
+            GridView1.DataSource = svc.VIEWALLFILES();
             GridView1.DataBind();
         }
 
@@ -55,6 +55,10 @@ namespace WebFormForRegisterDB
             }
         }
 
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
     

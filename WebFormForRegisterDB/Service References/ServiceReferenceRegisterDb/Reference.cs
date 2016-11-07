@@ -586,6 +586,8 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             private global::System.Data.DataColumn columnCity;
             
+            private global::System.Data.DataColumn columnA_ID;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PersonsDataTable() {
@@ -677,6 +679,14 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn A_IDColumn {
+                get {
+                    return this.columnA_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -712,7 +722,7 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public PersonsRow AddPersonsRow(string LastName, string FirstName, string Username, string Password, string Address, string City) {
+            public PersonsRow AddPersonsRow(string LastName, string FirstName, string Username, string Password, string Address, string City, int A_ID) {
                 PersonsRow rowPersonsRow = ((PersonsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -721,7 +731,8 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                         Username,
                         Password,
                         Address,
-                        City};
+                        City,
+                        A_ID};
                 rowPersonsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPersonsRow);
                 return rowPersonsRow;
@@ -758,6 +769,7 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                 this.columnPassword = base.Columns["Password"];
                 this.columnAddress = base.Columns["Address"];
                 this.columnCity = base.Columns["City"];
+                this.columnA_ID = base.Columns["A_ID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -777,6 +789,8 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                 base.Columns.Add(this.columnAddress);
                 this.columnCity = new global::System.Data.DataColumn("City", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCity);
+                this.columnA_ID = new global::System.Data.DataColumn("A_ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnA_ID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnP_Id}, true));
                 this.columnP_Id.AutoIncrement = true;
@@ -792,6 +806,7 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                 this.columnPassword.MaxLength = 255;
                 this.columnAddress.MaxLength = 255;
                 this.columnCity.MaxLength = 255;
+                this.columnA_ID.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -943,9 +958,9 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             private global::System.Data.DataColumn columnAuthorityName;
             
-            private global::System.Data.DataColumn columnA_Id;
+            private global::System.Data.DataColumn columnA_ID;
             
-            private global::System.Data.DataColumn columnaccessLevel;
+            private global::System.Data.DataColumn columnAA_ID;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -1054,17 +1069,17 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn A_IdColumn {
+            public global::System.Data.DataColumn A_IDColumn {
                 get {
-                    return this.columnA_Id;
+                    return this.columnA_ID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn accessLevelColumn {
+            public global::System.Data.DataColumn AA_IDColumn {
                 get {
-                    return this.columnaccessLevel;
+                    return this.columnAA_ID;
                 }
             }
             
@@ -1105,7 +1120,7 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public PersonAndAuthorityRow AddPersonAndAuthorityRow(string LastName, string FirstName, string Username, string Password, string Address, string City, int AccessLevel, string AuthorityName, int accessLevel1) {
+            public PersonAndAuthorityRow AddPersonAndAuthorityRow(string LastName, string FirstName, string Username, string Password, string Address, string City, int AccessLevel, string AuthorityName, int A_ID) {
                 PersonAndAuthorityRow rowPersonAndAuthorityRow = ((PersonAndAuthorityRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1117,8 +1132,8 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                         City,
                         AccessLevel,
                         AuthorityName,
-                        null,
-                        accessLevel1};
+                        A_ID,
+                        null};
                 rowPersonAndAuthorityRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPersonAndAuthorityRow);
                 return rowPersonAndAuthorityRow;
@@ -1157,8 +1172,8 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                 this.columnCity = base.Columns["City"];
                 this.columnAccessLevel = base.Columns["AccessLevel"];
                 this.columnAuthorityName = base.Columns["AuthorityName"];
-                this.columnA_Id = base.Columns["A_Id"];
-                this.columnaccessLevel = base.Columns["accessLevel"];
+                this.columnA_ID = base.Columns["A_ID"];
+                this.columnAA_ID = base.Columns["AA_ID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1182,10 +1197,10 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                 base.Columns.Add(this.columnAccessLevel);
                 this.columnAuthorityName = new global::System.Data.DataColumn("AuthorityName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAuthorityName);
-                this.columnA_Id = new global::System.Data.DataColumn("A_Id", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnA_Id);
-                this.columnaccessLevel = new global::System.Data.DataColumn("accessLevel", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnaccessLevel);
+                this.columnA_ID = new global::System.Data.DataColumn("A_ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnA_ID);
+                this.columnAA_ID = new global::System.Data.DataColumn("AA_ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAA_ID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnP_Id}, true));
                 this.columnP_Id.AutoIncrement = true;
@@ -1204,13 +1219,12 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                 this.columnAccessLevel.AllowDBNull = false;
                 this.columnAuthorityName.AllowDBNull = false;
                 this.columnAuthorityName.MaxLength = 255;
-                this.columnA_Id.AutoIncrement = true;
-                this.columnA_Id.AutoIncrementSeed = -1;
-                this.columnA_Id.AutoIncrementStep = -1;
-                this.columnA_Id.AllowDBNull = false;
-                this.columnA_Id.ReadOnly = true;
-                this.columnaccessLevel.AllowDBNull = false;
-                this.columnaccessLevel.Caption = "accessLevel1";
+                this.columnA_ID.AllowDBNull = false;
+                this.columnAA_ID.AutoIncrement = true;
+                this.columnAA_ID.AutoIncrementSeed = -1;
+                this.columnAA_ID.AutoIncrementStep = -1;
+                this.columnAA_ID.AllowDBNull = false;
+                this.columnAA_ID.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1690,6 +1704,17 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int A_ID {
+                get {
+                    return ((int)(this[this.tablePersons.A_IDColumn]));
+                }
+                set {
+                    this[this.tablePersons.A_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsFirstNameNull() {
                 return this.IsNull(this.tablePersons.FirstNameColumn);
             }
@@ -1889,23 +1914,23 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int A_Id {
+            public int A_ID {
                 get {
-                    return ((int)(this[this.tablePersonAndAuthority.A_IdColumn]));
+                    return ((int)(this[this.tablePersonAndAuthority.A_IDColumn]));
                 }
                 set {
-                    this[this.tablePersonAndAuthority.A_IdColumn] = value;
+                    this[this.tablePersonAndAuthority.A_IDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int accessLevel {
+            public int AA_ID {
                 get {
-                    return ((int)(this[this.tablePersonAndAuthority.accessLevelColumn]));
+                    return ((int)(this[this.tablePersonAndAuthority.AA_IDColumn]));
                 }
                 set {
-                    this[this.tablePersonAndAuthority.accessLevelColumn] = value;
+                    this[this.tablePersonAndAuthority.AA_IDColumn] = value;
                 }
             }
             

@@ -130,6 +130,8 @@ namespace WcfServiceForRegisterDB
 
         DataSet_Persons.PersonAndAuthorityDataTable IService1.verify(String UserName , String Password)
         {
+
+            
              da_personAndAuthority.FillVerify(dt_personAndAuthority,UserName,Password);
             return dt_personAndAuthority;
             

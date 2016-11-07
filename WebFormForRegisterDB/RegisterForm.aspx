@@ -81,7 +81,7 @@
                 <td class="auto-style12">
                     &nbsp;</td>
                 <td class="auto-style17">
-                    <asp:GridView ID="GridView1" runat="server">
+                    <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                     </asp:GridView>
                 </td>
                 <td>&nbsp;</td>
