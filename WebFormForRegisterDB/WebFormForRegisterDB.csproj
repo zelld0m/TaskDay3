@@ -112,6 +112,7 @@
     <Content Include="css\bootstrap-theme.min.css.map" />
     <Content Include="css\bootstrap.css.map" />
     <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="WebForm2.aspx" />
     <None Include="Service References\ServiceReferenceRegisterDb\Service1.wsdl" />
     <None Include="Service References\ServiceReferenceRegisterDb\Service1.xsd">
       <SubType>Designer</SubType>
@@ -122,19 +123,7 @@
     <None Include="Service References\ServiceReferenceRegisterDb\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
     <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityResponse.datasource">
@@ -144,6 +133,18 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteRegisteredPersonQueryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.insertRegistrationQueryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateRegistrationQueryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
@@ -236,6 +237,13 @@
     </Compile>
     <Compile Include="UserViewForm.aspx.designer.cs">
       <DependentUpon>UserViewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

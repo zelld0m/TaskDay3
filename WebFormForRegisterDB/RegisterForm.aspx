@@ -85,7 +85,10 @@
                     </asp:GridView>
                 </td>
                 <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:GridView ID="GridView2" runat="server">
+                    </asp:GridView>
+                </td>
                 <td>&nbsp;</td>
             </tr>
         </table>
@@ -151,7 +154,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:DropDownList ID="DropDownList1" runat="server">
+                                <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                                     <asp:ListItem Value="1"></asp:ListItem>
                                     <asp:ListItem Value="2"></asp:ListItem>
                                     <asp:ListItem Value="3"></asp:ListItem>

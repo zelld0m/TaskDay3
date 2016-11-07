@@ -21,7 +21,7 @@ namespace WebFormForRegisterDB
 
         protected void Btn_ViewALL_Click(object sender, EventArgs e)
         {
-            // AccessLevel = Convert.ToInt16(svc.VIEWALLFILES().Rows[0][7]);
+            //AccessLevel = Convert.ToInt16(svc.VIEWALLFILES().Rows[0][7]);
 
             
             int x = svc._verify(tb_UserName.Text, Tb_Password.Text).Count;
@@ -43,7 +43,7 @@ namespace WebFormForRegisterDB
             }
         
         protected void Btn_UserOnly(object sender, EventArgs e)
-        //protected void Btn_Register_Click(object sender, EventArgs e)
+       
         {
             ClearControls();
             Server.Transfer("UserViewForm.aspx", true);

@@ -20,7 +20,7 @@ namespace WebFormForRegisterDB
 
         protected void Btn_Delete_Click(object sender, EventArgs e)
         {
-            svc.deleteEntry(Convert.ToInt16(Tb_Delete.Text));
+            svc.deleteRegisteredPersonQuery(Convert.ToInt16(Tb_Delete.Text));
             
             Page_Load(sender, e);
             ClearControls();

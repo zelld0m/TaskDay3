@@ -65,24 +65,24 @@ namespace WcfServiceForRegisterDB
             return dt;
             throw new NotImplementedException();
         }
-        DataSet_Persons.PersonsDataTable IService1.deleteEntry(int inputUserID_ToDelete)
+        DataSet_Persons.PersonsDataTable IService1.deleteRegisteredPersonQuery(int inputUserID_ToDelete)
         {
             da.DeleteRegisteredPersonQuery(inputUserID_ToDelete);
             return dt;
             throw new NotImplementedException();
         }
-        DataSet_Persons.PersonsDataTable IService1.UpdateEntry(string LastName, string FirstName, string UserName, string Password, string Address,int user_ID_to_updates)
+        DataSet_Persons.PersonsDataTable IService1.UpdateRegistrationQuery(string LastName, string FirstName, string UserName, string Password, string Address,int user_ID_to_updates)
         {
             da._UpdateRegistrationQuery(LastName, FirstName, UserName, Password,Address, user_ID_to_updates);
             return dt;
             throw new NotImplementedException();
         }
-        DataSet_Persons.PersonsDataTable IService1._insertPerson(string LastName, string FirstName, string UserName, string Password, string Address)
+        DataSet_Persons.PersonsDataTable IService1.insertRegistrationQuery(string LastName, string FirstName, string UserName, string Password, string Address)
         {
             da._InsertRegistrationQuery(LastName, FirstName, UserName, Password, Address);
             throw new NotImplementedException();
         }
-        DataSet_Persons.PersonsDataTable IService1.UserViewOnly()
+        DataSet_Persons.PersonsDataTable IService1.ViewUserOnly()
         {
             da.ViewUsersOnly(dt);
             return dt;
@@ -118,6 +118,7 @@ namespace WcfServiceForRegisterDB
         DataSet_Persons.PersonAndAuthorityDataTable IService1._verify(string Username, string Password)
         {
             da_personAndAuthority._FillVerify(dt_personAndAuthority, Username,Password);
+            return dt_personAndAuthority;
             throw new NotImplementedException();
         }
 

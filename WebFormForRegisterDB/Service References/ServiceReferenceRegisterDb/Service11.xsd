@@ -55,17 +55,17 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="deleteEntry">
+  <xs:element name="deleteRegisteredPersonQuery">
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="inputUserID_ToDelete" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="deleteEntryResponse">
+  <xs:element name="deleteRegisteredPersonQueryResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="deleteEntryResult" nillable="true">
+        <xs:element minOccurs="0" name="deleteRegisteredPersonQueryResult" nillable="true">
           <xs:complexType>
             <xs:annotation>
               <xs:appinfo>
@@ -83,7 +83,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="_insertPerson">
+  <xs:element name="insertRegistrationQuery">
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
@@ -94,10 +94,10 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="_insertPersonResponse">
+  <xs:element name="insertRegistrationQueryResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="_insertPersonResult" nillable="true">
+        <xs:element minOccurs="0" name="insertRegistrationQueryResult" nillable="true">
           <xs:complexType>
             <xs:annotation>
               <xs:appinfo>
@@ -115,7 +115,7 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="UpdateEntry">
+  <xs:element name="UpdateRegistrationQuery">
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
@@ -127,10 +127,10 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="UpdateEntryResponse">
+  <xs:element name="UpdateRegistrationQueryResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="UpdateEntryResult" nillable="true">
+        <xs:element minOccurs="0" name="UpdateRegistrationQueryResult" nillable="true">
           <xs:complexType>
             <xs:annotation>
               <xs:appinfo>
@@ -148,15 +148,15 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="UserViewOnly">
+  <xs:element name="ViewUserOnly">
     <xs:complexType>
       <xs:sequence />
     </xs:complexType>
   </xs:element>
-  <xs:element name="UserViewOnlyResponse">
+  <xs:element name="ViewUserOnlyResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="UserViewOnlyResult" nillable="true">
+        <xs:element minOccurs="0" name="ViewUserOnlyResult" nillable="true">
           <xs:complexType>
             <xs:annotation>
               <xs:appinfo>

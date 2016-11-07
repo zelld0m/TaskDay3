@@ -39,37 +39,37 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/viewALL", ReplyAction="http://tempuri.org/IService1/viewALLResponse")]
         System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.viewALLResponse> viewALLAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.viewALLRequest request);
         
-        // CODEGEN: Parameter 'deleteEntryResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/deleteEntry", ReplyAction="http://tempuri.org/IService1/deleteEntryResponse")]
+        // CODEGEN: Parameter 'deleteRegisteredPersonQueryResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/deleteRegisteredPersonQuery", ReplyAction="http://tempuri.org/IService1/deleteRegisteredPersonQueryResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryResponse deleteEntry(WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryRequest request);
+        WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteRegisteredPersonQueryResponse deleteRegisteredPersonQuery(WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteRegisteredPersonQueryRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/deleteEntry", ReplyAction="http://tempuri.org/IService1/deleteEntryResponse")]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryResponse> deleteEntryAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/deleteRegisteredPersonQuery", ReplyAction="http://tempuri.org/IService1/deleteRegisteredPersonQueryResponse")]
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteRegisteredPersonQueryResponse> deleteRegisteredPersonQueryAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteRegisteredPersonQueryRequest request);
         
-        // CODEGEN: Parameter '_insertPersonResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_insertPerson", ReplyAction="http://tempuri.org/IService1/_insertPersonResponse")]
+        // CODEGEN: Parameter 'insertRegistrationQueryResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/insertRegistrationQuery", ReplyAction="http://tempuri.org/IService1/insertRegistrationQueryResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonResponse _insertPerson(WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest request);
+        WebFormForRegisterDB.ServiceReferenceRegisterDb.insertRegistrationQueryResponse insertRegistrationQuery(WebFormForRegisterDB.ServiceReferenceRegisterDb.insertRegistrationQueryRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_insertPerson", ReplyAction="http://tempuri.org/IService1/_insertPersonResponse")]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonResponse> _insertPersonAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/insertRegistrationQuery", ReplyAction="http://tempuri.org/IService1/insertRegistrationQueryResponse")]
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.insertRegistrationQueryResponse> insertRegistrationQueryAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.insertRegistrationQueryRequest request);
         
-        // CODEGEN: Parameter 'UpdateEntryResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateEntry", ReplyAction="http://tempuri.org/IService1/UpdateEntryResponse")]
+        // CODEGEN: Parameter 'UpdateRegistrationQueryResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateRegistrationQuery", ReplyAction="http://tempuri.org/IService1/UpdateRegistrationQueryResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryResponse UpdateEntry(WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryRequest request);
+        WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateRegistrationQueryResponse UpdateRegistrationQuery(WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateRegistrationQueryRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateEntry", ReplyAction="http://tempuri.org/IService1/UpdateEntryResponse")]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryResponse> UpdateEntryAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateRegistrationQuery", ReplyAction="http://tempuri.org/IService1/UpdateRegistrationQueryResponse")]
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateRegistrationQueryResponse> UpdateRegistrationQueryAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateRegistrationQueryRequest request);
         
-        // CODEGEN: Parameter 'UserViewOnlyResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UserViewOnly", ReplyAction="http://tempuri.org/IService1/UserViewOnlyResponse")]
+        // CODEGEN: Parameter 'ViewUserOnlyResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ViewUserOnly", ReplyAction="http://tempuri.org/IService1/ViewUserOnlyResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyResponse UserViewOnly(WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyRequest request);
+        WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyResponse ViewUserOnly(WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UserViewOnly", ReplyAction="http://tempuri.org/IService1/UserViewOnlyResponse")]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyResponse> UserViewOnlyAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ViewUserOnly", ReplyAction="http://tempuri.org/IService1/ViewUserOnlyResponse")]
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyResponse> ViewUserOnlyAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyRequest request);
         
         // CODEGEN: Parameter '_VIEWALLFILESResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_VIEWALLFILES", ReplyAction="http://tempuri.org/IService1/_VIEWALLFILESResponse")]
@@ -1687,16 +1687,16 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteEntry", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class deleteEntryRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteRegisteredPersonQuery", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class deleteRegisteredPersonQueryRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         public int inputUserID_ToDelete;
         
-        public deleteEntryRequest() {
+        public deleteRegisteredPersonQueryRequest() {
         }
         
-        public deleteEntryRequest(int inputUserID_ToDelete) {
+        public deleteRegisteredPersonQueryRequest(int inputUserID_ToDelete) {
             this.inputUserID_ToDelete = inputUserID_ToDelete;
         }
     }
@@ -1704,26 +1704,26 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteEntryResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class deleteEntryResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteRegisteredPersonQueryResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class deleteRegisteredPersonQueryResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public DataSet_Persons.PersonsDataTable deleteEntryResult;
+        public DataSet_Persons.PersonsDataTable deleteRegisteredPersonQueryResult;
         
-        public deleteEntryResponse() {
+        public deleteRegisteredPersonQueryResponse() {
         }
         
-        public deleteEntryResponse(DataSet_Persons.PersonsDataTable deleteEntryResult) {
-            this.deleteEntryResult = deleteEntryResult;
+        public deleteRegisteredPersonQueryResponse(DataSet_Persons.PersonsDataTable deleteRegisteredPersonQueryResult) {
+            this.deleteRegisteredPersonQueryResult = deleteRegisteredPersonQueryResult;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="_insertPerson", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class _insertPersonRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertRegistrationQuery", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class insertRegistrationQueryRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -1745,10 +1745,10 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string Address;
         
-        public _insertPersonRequest() {
+        public insertRegistrationQueryRequest() {
         }
         
-        public _insertPersonRequest(string LastName, string FirstName, string UserName, string Password, string Address) {
+        public insertRegistrationQueryRequest(string LastName, string FirstName, string UserName, string Password, string Address) {
             this.LastName = LastName;
             this.FirstName = FirstName;
             this.UserName = UserName;
@@ -1760,26 +1760,26 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="_insertPersonResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class _insertPersonResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertRegistrationQueryResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class insertRegistrationQueryResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public DataSet_Persons.PersonsDataTable _insertPersonResult;
+        public DataSet_Persons.PersonsDataTable insertRegistrationQueryResult;
         
-        public _insertPersonResponse() {
+        public insertRegistrationQueryResponse() {
         }
         
-        public _insertPersonResponse(DataSet_Persons.PersonsDataTable _insertPersonResult) {
-            this._insertPersonResult = _insertPersonResult;
+        public insertRegistrationQueryResponse(DataSet_Persons.PersonsDataTable insertRegistrationQueryResult) {
+            this.insertRegistrationQueryResult = insertRegistrationQueryResult;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UpdateEntry", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class UpdateEntryRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="UpdateRegistrationQuery", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class UpdateRegistrationQueryRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -1804,10 +1804,10 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=5)]
         public int user_ID_to_update;
         
-        public UpdateEntryRequest() {
+        public UpdateRegistrationQueryRequest() {
         }
         
-        public UpdateEntryRequest(string LastName, string FirstName, string UserName, string Password, string Address, int user_ID_to_update) {
+        public UpdateRegistrationQueryRequest(string LastName, string FirstName, string UserName, string Password, string Address, int user_ID_to_update) {
             this.LastName = LastName;
             this.FirstName = FirstName;
             this.UserName = UserName;
@@ -1820,46 +1820,46 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UpdateEntryResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class UpdateEntryResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="UpdateRegistrationQueryResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class UpdateRegistrationQueryResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public DataSet_Persons.PersonsDataTable UpdateEntryResult;
+        public DataSet_Persons.PersonsDataTable UpdateRegistrationQueryResult;
         
-        public UpdateEntryResponse() {
+        public UpdateRegistrationQueryResponse() {
         }
         
-        public UpdateEntryResponse(DataSet_Persons.PersonsDataTable UpdateEntryResult) {
-            this.UpdateEntryResult = UpdateEntryResult;
+        public UpdateRegistrationQueryResponse(DataSet_Persons.PersonsDataTable UpdateRegistrationQueryResult) {
+            this.UpdateRegistrationQueryResult = UpdateRegistrationQueryResult;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UserViewOnly", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class UserViewOnlyRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="ViewUserOnly", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class ViewUserOnlyRequest {
         
-        public UserViewOnlyRequest() {
+        public ViewUserOnlyRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UserViewOnlyResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class UserViewOnlyResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="ViewUserOnlyResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class ViewUserOnlyResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public DataSet_Persons.PersonsDataTable UserViewOnlyResult;
+        public DataSet_Persons.PersonsDataTable ViewUserOnlyResult;
         
-        public UserViewOnlyResponse() {
+        public ViewUserOnlyResponse() {
         }
         
-        public UserViewOnlyResponse(DataSet_Persons.PersonsDataTable UserViewOnlyResult) {
-            this.UserViewOnlyResult = UserViewOnlyResult;
+        public ViewUserOnlyResponse(DataSet_Persons.PersonsDataTable ViewUserOnlyResult) {
+            this.ViewUserOnlyResult = ViewUserOnlyResult;
         }
     }
     
@@ -2111,111 +2111,111 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.deleteEntry(WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryRequest request) {
-            return base.Channel.deleteEntry(request);
+        WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteRegisteredPersonQueryResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.deleteRegisteredPersonQuery(WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteRegisteredPersonQueryRequest request) {
+            return base.Channel.deleteRegisteredPersonQuery(request);
         }
         
-        public DataSet_Persons.PersonsDataTable deleteEntry(int inputUserID_ToDelete) {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryRequest();
+        public DataSet_Persons.PersonsDataTable deleteRegisteredPersonQuery(int inputUserID_ToDelete) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteRegisteredPersonQueryRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteRegisteredPersonQueryRequest();
             inValue.inputUserID_ToDelete = inputUserID_ToDelete;
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).deleteEntry(inValue);
-            return retVal.deleteEntryResult;
+            WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteRegisteredPersonQueryResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).deleteRegisteredPersonQuery(inValue);
+            return retVal.deleteRegisteredPersonQueryResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.deleteEntryAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryRequest request) {
-            return base.Channel.deleteEntryAsync(request);
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteRegisteredPersonQueryResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.deleteRegisteredPersonQueryAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteRegisteredPersonQueryRequest request) {
+            return base.Channel.deleteRegisteredPersonQueryAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryResponse> deleteEntryAsync(int inputUserID_ToDelete) {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryRequest();
+        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteRegisteredPersonQueryResponse> deleteRegisteredPersonQueryAsync(int inputUserID_ToDelete) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteRegisteredPersonQueryRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteRegisteredPersonQueryRequest();
             inValue.inputUserID_ToDelete = inputUserID_ToDelete;
-            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).deleteEntryAsync(inValue);
+            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).deleteRegisteredPersonQueryAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1._insertPerson(WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest request) {
-            return base.Channel._insertPerson(request);
+        WebFormForRegisterDB.ServiceReferenceRegisterDb.insertRegistrationQueryResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.insertRegistrationQuery(WebFormForRegisterDB.ServiceReferenceRegisterDb.insertRegistrationQueryRequest request) {
+            return base.Channel.insertRegistrationQuery(request);
         }
         
-        public DataSet_Persons.PersonsDataTable _insertPerson(string LastName, string FirstName, string UserName, string Password, string Address) {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest();
+        public DataSet_Persons.PersonsDataTable insertRegistrationQuery(string LastName, string FirstName, string UserName, string Password, string Address) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb.insertRegistrationQueryRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.insertRegistrationQueryRequest();
             inValue.LastName = LastName;
             inValue.FirstName = FirstName;
             inValue.UserName = UserName;
             inValue.Password = Password;
             inValue.Address = Address;
-            WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this))._insertPerson(inValue);
-            return retVal._insertPersonResult;
+            WebFormForRegisterDB.ServiceReferenceRegisterDb.insertRegistrationQueryResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).insertRegistrationQuery(inValue);
+            return retVal.insertRegistrationQueryResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1._insertPersonAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest request) {
-            return base.Channel._insertPersonAsync(request);
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.insertRegistrationQueryResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.insertRegistrationQueryAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.insertRegistrationQueryRequest request) {
+            return base.Channel.insertRegistrationQueryAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonResponse> _insertPersonAsync(string LastName, string FirstName, string UserName, string Password, string Address) {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest();
+        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.insertRegistrationQueryResponse> insertRegistrationQueryAsync(string LastName, string FirstName, string UserName, string Password, string Address) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb.insertRegistrationQueryRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.insertRegistrationQueryRequest();
             inValue.LastName = LastName;
             inValue.FirstName = FirstName;
             inValue.UserName = UserName;
             inValue.Password = Password;
             inValue.Address = Address;
-            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this))._insertPersonAsync(inValue);
+            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).insertRegistrationQueryAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.UpdateEntry(WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryRequest request) {
-            return base.Channel.UpdateEntry(request);
+        WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateRegistrationQueryResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.UpdateRegistrationQuery(WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateRegistrationQueryRequest request) {
+            return base.Channel.UpdateRegistrationQuery(request);
         }
         
-        public DataSet_Persons.PersonsDataTable UpdateEntry(string LastName, string FirstName, string UserName, string Password, string Address, int user_ID_to_update) {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryRequest();
+        public DataSet_Persons.PersonsDataTable UpdateRegistrationQuery(string LastName, string FirstName, string UserName, string Password, string Address, int user_ID_to_update) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateRegistrationQueryRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateRegistrationQueryRequest();
             inValue.LastName = LastName;
             inValue.FirstName = FirstName;
             inValue.UserName = UserName;
             inValue.Password = Password;
             inValue.Address = Address;
             inValue.user_ID_to_update = user_ID_to_update;
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).UpdateEntry(inValue);
-            return retVal.UpdateEntryResult;
+            WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateRegistrationQueryResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).UpdateRegistrationQuery(inValue);
+            return retVal.UpdateRegistrationQueryResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.UpdateEntryAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryRequest request) {
-            return base.Channel.UpdateEntryAsync(request);
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateRegistrationQueryResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.UpdateRegistrationQueryAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateRegistrationQueryRequest request) {
+            return base.Channel.UpdateRegistrationQueryAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryResponse> UpdateEntryAsync(string LastName, string FirstName, string UserName, string Password, string Address, int user_ID_to_update) {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryRequest();
+        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateRegistrationQueryResponse> UpdateRegistrationQueryAsync(string LastName, string FirstName, string UserName, string Password, string Address, int user_ID_to_update) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateRegistrationQueryRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateRegistrationQueryRequest();
             inValue.LastName = LastName;
             inValue.FirstName = FirstName;
             inValue.UserName = UserName;
             inValue.Password = Password;
             inValue.Address = Address;
             inValue.user_ID_to_update = user_ID_to_update;
-            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).UpdateEntryAsync(inValue);
+            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).UpdateRegistrationQueryAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.UserViewOnly(WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyRequest request) {
-            return base.Channel.UserViewOnly(request);
+        WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.ViewUserOnly(WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyRequest request) {
+            return base.Channel.ViewUserOnly(request);
         }
         
-        public DataSet_Persons.PersonsDataTable UserViewOnly() {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyRequest();
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).UserViewOnly(inValue);
-            return retVal.UserViewOnlyResult;
+        public DataSet_Persons.PersonsDataTable ViewUserOnly() {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyRequest();
+            WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).ViewUserOnly(inValue);
+            return retVal.ViewUserOnlyResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.UserViewOnlyAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyRequest request) {
-            return base.Channel.UserViewOnlyAsync(request);
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.ViewUserOnlyAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyRequest request) {
+            return base.Channel.ViewUserOnlyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyResponse> UserViewOnlyAsync() {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyRequest();
-            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).UserViewOnlyAsync(inValue);
+        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyResponse> ViewUserOnlyAsync() {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyRequest();
+            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).ViewUserOnlyAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]

@@ -12,17 +12,20 @@ namespace WebFormForRegisterDB
         ServiceReferenceRegisterDb.Service1Client svc = new ServiceReferenceRegisterDb.Service1Client();
         protected void Page_Load(object sender, EventArgs e)
         {
-            GridView1.DataSource = svc._VIEWALLFILES();
+            GridView1.DataSource = svc.viewALL();
             GridView1.DataBind();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            svc._insertPerson(Tb_Lname.Text, Tb_FName.Text, Tb_UserName.Text, Tb_Password.Text, Tb_Address.Text);
-          //  svc._InsertAuthority(Tb_AuthorityName.Text, Convert.ToInt16(DropDownList1.Text));
-           // svc.InsertAuthority(Tb_AuthorityName.Text, DropDownList1.TabIndex);
-
-            Page_Load(sender, e);
+           //svc._insertPerson(Tb_Lname.Text, Tb_FName.Text, Tb_UserName.Text, Tb_Password.Text, Tb_Address.Text);
+            
+           svc._InsertAuthority(Tb_AuthorityName.Text, Convert.ToInt16(DropDownList1.SelectedValue));
+           svc.insertRegistrationQuery(Tb_Lname.Text, Tb_FName.Text, Tb_UserName.Text, Tb_Password.Text, Tb_Address.Text);
+           
+           svc._InsertAuthority(Tb_AuthorityName.Text, DropDownList1.SelectedIndex);
+            
+           // Page_Load(sender, e);
             ClearControls();
            
         }
@@ -57,6 +60,11 @@ namespace WebFormForRegisterDB
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

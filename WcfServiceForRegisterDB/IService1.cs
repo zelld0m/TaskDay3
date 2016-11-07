@@ -20,20 +20,20 @@ namespace WcfServiceForRegisterDB
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         // TODO: Add your service operations here
-        #region Persons   =0=================================================================
+        #region Persons   ==================================================================
 
         [OperationContract]
         ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable viewALL();
         [OperationContract]
-        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable deleteEntry(int inputUserID_ToDelete);
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable deleteRegisteredPersonQuery(int inputUserID_ToDelete);
         [OperationContract]
-        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable _insertPerson(String LastName, String FirstName, String UserName, String Password, String Address);
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable insertRegistrationQuery(String LastName, String FirstName, String UserName, String Password, String Address);
         [OperationContract]
-        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable UpdateEntry(String LastName,String FirstName, String UserName, String Password, String Address , int user_ID_to_update);
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable UpdateRegistrationQuery(String LastName,String FirstName, String UserName, String Password, String Address , int user_ID_to_update);
         [OperationContract]
-        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable UserViewOnly();
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable ViewUserOnly();
 
-        #endregion Person   =0=================================================================
+        #endregion Person   ==================================================================
         
         #region Authority
 

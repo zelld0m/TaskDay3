@@ -27,29 +27,29 @@
   <wsdl:message name="IService1_viewALL_OutputMessage">
     <wsdl:part name="parameters" element="tns:viewALLResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_deleteEntry_InputMessage">
-    <wsdl:part name="parameters" element="tns:deleteEntry" />
+  <wsdl:message name="IService1_deleteRegisteredPersonQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteRegisteredPersonQuery" />
   </wsdl:message>
-  <wsdl:message name="IService1_deleteEntry_OutputMessage">
-    <wsdl:part name="parameters" element="tns:deleteEntryResponse" />
+  <wsdl:message name="IService1_deleteRegisteredPersonQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteRegisteredPersonQueryResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1__insertPerson_InputMessage">
-    <wsdl:part name="parameters" element="tns:_insertPerson" />
+  <wsdl:message name="IService1_insertRegistrationQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertRegistrationQuery" />
   </wsdl:message>
-  <wsdl:message name="IService1__insertPerson_OutputMessage">
-    <wsdl:part name="parameters" element="tns:_insertPersonResponse" />
+  <wsdl:message name="IService1_insertRegistrationQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertRegistrationQueryResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_UpdateEntry_InputMessage">
-    <wsdl:part name="parameters" element="tns:UpdateEntry" />
+  <wsdl:message name="IService1_UpdateRegistrationQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRegistrationQuery" />
   </wsdl:message>
-  <wsdl:message name="IService1_UpdateEntry_OutputMessage">
-    <wsdl:part name="parameters" element="tns:UpdateEntryResponse" />
+  <wsdl:message name="IService1_UpdateRegistrationQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRegistrationQueryResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_UserViewOnly_InputMessage">
-    <wsdl:part name="parameters" element="tns:UserViewOnly" />
+  <wsdl:message name="IService1_ViewUserOnly_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewUserOnly" />
   </wsdl:message>
-  <wsdl:message name="IService1_UserViewOnly_OutputMessage">
-    <wsdl:part name="parameters" element="tns:UserViewOnlyResponse" />
+  <wsdl:message name="IService1_ViewUserOnly_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewUserOnlyResponse" />
   </wsdl:message>
   <wsdl:message name="IService1__VIEWALLFILES_InputMessage">
     <wsdl:part name="parameters" element="tns:_VIEWALLFILES" />
@@ -88,21 +88,21 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/viewALL" message="tns:IService1_viewALL_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/viewALLResponse" message="tns:IService1_viewALL_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="deleteEntry">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteEntry" message="tns:IService1_deleteEntry_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteEntryResponse" message="tns:IService1_deleteEntry_OutputMessage" />
+    <wsdl:operation name="deleteRegisteredPersonQuery">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteRegisteredPersonQuery" message="tns:IService1_deleteRegisteredPersonQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteRegisteredPersonQueryResponse" message="tns:IService1_deleteRegisteredPersonQuery_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="_insertPerson">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/_insertPerson" message="tns:IService1__insertPerson_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/_insertPersonResponse" message="tns:IService1__insertPerson_OutputMessage" />
+    <wsdl:operation name="insertRegistrationQuery">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/insertRegistrationQuery" message="tns:IService1_insertRegistrationQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/insertRegistrationQueryResponse" message="tns:IService1_insertRegistrationQuery_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="UpdateEntry">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateEntry" message="tns:IService1_UpdateEntry_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateEntryResponse" message="tns:IService1_UpdateEntry_OutputMessage" />
+    <wsdl:operation name="UpdateRegistrationQuery">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateRegistrationQuery" message="tns:IService1_UpdateRegistrationQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateRegistrationQueryResponse" message="tns:IService1_UpdateRegistrationQuery_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="UserViewOnly">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UserViewOnly" message="tns:IService1_UserViewOnly_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UserViewOnlyResponse" message="tns:IService1_UserViewOnly_OutputMessage" />
+    <wsdl:operation name="ViewUserOnly">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ViewUserOnly" message="tns:IService1_ViewUserOnly_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ViewUserOnlyResponse" message="tns:IService1_ViewUserOnly_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="_VIEWALLFILES">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/_VIEWALLFILES" message="tns:IService1__VIEWALLFILES_InputMessage" />
@@ -150,8 +150,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="deleteEntry">
-      <soap:operation soapAction="http://tempuri.org/IService1/deleteEntry" style="document" />
+    <wsdl:operation name="deleteRegisteredPersonQuery">
+      <soap:operation soapAction="http://tempuri.org/IService1/deleteRegisteredPersonQuery" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -159,8 +159,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="_insertPerson">
-      <soap:operation soapAction="http://tempuri.org/IService1/_insertPerson" style="document" />
+    <wsdl:operation name="insertRegistrationQuery">
+      <soap:operation soapAction="http://tempuri.org/IService1/insertRegistrationQuery" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -168,8 +168,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="UpdateEntry">
-      <soap:operation soapAction="http://tempuri.org/IService1/UpdateEntry" style="document" />
+    <wsdl:operation name="UpdateRegistrationQuery">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateRegistrationQuery" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -177,8 +177,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="UserViewOnly">
-      <soap:operation soapAction="http://tempuri.org/IService1/UserViewOnly" style="document" />
+    <wsdl:operation name="ViewUserOnly">
+      <soap:operation soapAction="http://tempuri.org/IService1/ViewUserOnly" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
