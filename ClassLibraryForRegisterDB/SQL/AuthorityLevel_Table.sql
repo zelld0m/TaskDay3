@@ -13,7 +13,5 @@ AccessLevel int NOT NULL
 
 
 insert into AuthorityLevel(AuthorityName,AccessLevel)
-values('User_1',1),('User_2',2),('User_3',3),('HalfAdmin',4),('FULL-Admin',5)
-
-
+values('User_1',1)
 
