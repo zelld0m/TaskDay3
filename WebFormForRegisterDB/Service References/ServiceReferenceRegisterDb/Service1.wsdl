@@ -33,17 +33,17 @@
   <wsdl:message name="IService1_deleteEntry_OutputMessage">
     <wsdl:part name="parameters" element="tns:deleteEntryResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1__insertPerson_InputMessage">
+    <wsdl:part name="parameters" element="tns:_insertPerson" />
+  </wsdl:message>
+  <wsdl:message name="IService1__insertPerson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_insertPersonResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_UpdateEntry_InputMessage">
     <wsdl:part name="parameters" element="tns:UpdateEntry" />
   </wsdl:message>
   <wsdl:message name="IService1_UpdateEntry_OutputMessage">
     <wsdl:part name="parameters" element="tns:UpdateEntryResponse" />
-  </wsdl:message>
-  <wsdl:message name="IService1_AddEntry_InputMessage">
-    <wsdl:part name="parameters" element="tns:AddEntry" />
-  </wsdl:message>
-  <wsdl:message name="IService1_AddEntry_OutputMessage">
-    <wsdl:part name="parameters" element="tns:AddEntryResponse" />
   </wsdl:message>
   <wsdl:message name="IService1_UserViewOnly_InputMessage">
     <wsdl:part name="parameters" element="tns:UserViewOnly" />
@@ -51,29 +51,29 @@
   <wsdl:message name="IService1_UserViewOnly_OutputMessage">
     <wsdl:part name="parameters" element="tns:UserViewOnlyResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_UpdateAuthority_InputMessage">
-    <wsdl:part name="parameters" element="tns:UpdateAuthority" />
+  <wsdl:message name="IService1__VIEWALLFILES_InputMessage">
+    <wsdl:part name="parameters" element="tns:_VIEWALLFILES" />
   </wsdl:message>
-  <wsdl:message name="IService1_UpdateAuthority_OutputMessage">
-    <wsdl:part name="parameters" element="tns:UpdateAuthorityResponse" />
+  <wsdl:message name="IService1__VIEWALLFILES_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_VIEWALLFILESResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_InsertAuthority_InputMessage">
-    <wsdl:part name="parameters" element="tns:InsertAuthority" />
+  <wsdl:message name="IService1__UpdateAuthority_InputMessage">
+    <wsdl:part name="parameters" element="tns:_UpdateAuthority" />
   </wsdl:message>
-  <wsdl:message name="IService1_InsertAuthority_OutputMessage">
-    <wsdl:part name="parameters" element="tns:InsertAuthorityResponse" />
+  <wsdl:message name="IService1__UpdateAuthority_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_UpdateAuthorityResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_VIEWALLFILES_InputMessage">
-    <wsdl:part name="parameters" element="tns:VIEWALLFILES" />
+  <wsdl:message name="IService1__InsertAuthority_InputMessage">
+    <wsdl:part name="parameters" element="tns:_InsertAuthority" />
   </wsdl:message>
-  <wsdl:message name="IService1_VIEWALLFILES_OutputMessage">
-    <wsdl:part name="parameters" element="tns:VIEWALLFILESResponse" />
+  <wsdl:message name="IService1__InsertAuthority_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_InsertAuthorityResponse" />
   </wsdl:message>
-  <wsdl:message name="IService1_verify_InputMessage">
-    <wsdl:part name="parameters" element="tns:verify" />
+  <wsdl:message name="IService1__verify_InputMessage">
+    <wsdl:part name="parameters" element="tns:_verify" />
   </wsdl:message>
-  <wsdl:message name="IService1_verify_OutputMessage">
-    <wsdl:part name="parameters" element="tns:verifyResponse" />
+  <wsdl:message name="IService1__verify_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_verifyResponse" />
   </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="GetData">
@@ -92,33 +92,33 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteEntry" message="tns:IService1_deleteEntry_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteEntryResponse" message="tns:IService1_deleteEntry_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="_insertPerson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/_insertPerson" message="tns:IService1__insertPerson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/_insertPersonResponse" message="tns:IService1__insertPerson_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="UpdateEntry">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateEntry" message="tns:IService1_UpdateEntry_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateEntryResponse" message="tns:IService1_UpdateEntry_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="AddEntry">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AddEntry" message="tns:IService1_AddEntry_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AddEntryResponse" message="tns:IService1_AddEntry_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="UserViewOnly">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/UserViewOnly" message="tns:IService1_UserViewOnly_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/UserViewOnlyResponse" message="tns:IService1_UserViewOnly_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="UpdateAuthority">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateAuthority" message="tns:IService1_UpdateAuthority_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateAuthorityResponse" message="tns:IService1_UpdateAuthority_OutputMessage" />
+    <wsdl:operation name="_VIEWALLFILES">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/_VIEWALLFILES" message="tns:IService1__VIEWALLFILES_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/_VIEWALLFILESResponse" message="tns:IService1__VIEWALLFILES_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="InsertAuthority">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertAuthority" message="tns:IService1_InsertAuthority_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertAuthorityResponse" message="tns:IService1_InsertAuthority_OutputMessage" />
+    <wsdl:operation name="_UpdateAuthority">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/_UpdateAuthority" message="tns:IService1__UpdateAuthority_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/_UpdateAuthorityResponse" message="tns:IService1__UpdateAuthority_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="VIEWALLFILES">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VIEWALLFILES" message="tns:IService1_VIEWALLFILES_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VIEWALLFILESResponse" message="tns:IService1_VIEWALLFILES_OutputMessage" />
+    <wsdl:operation name="_InsertAuthority">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/_InsertAuthority" message="tns:IService1__InsertAuthority_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/_InsertAuthorityResponse" message="tns:IService1__InsertAuthority_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="verify">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService1/verify" message="tns:IService1_verify_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService1/verifyResponse" message="tns:IService1_verify_OutputMessage" />
+    <wsdl:operation name="_verify">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/_verify" message="tns:IService1__verify_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/_verifyResponse" message="tns:IService1__verify_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -159,8 +159,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="UpdateEntry">
-      <soap:operation soapAction="http://tempuri.org/IService1/UpdateEntry" style="document" />
+    <wsdl:operation name="_insertPerson">
+      <soap:operation soapAction="http://tempuri.org/IService1/_insertPerson" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -168,8 +168,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="AddEntry">
-      <soap:operation soapAction="http://tempuri.org/IService1/AddEntry" style="document" />
+    <wsdl:operation name="UpdateEntry">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateEntry" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -186,8 +186,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="UpdateAuthority">
-      <soap:operation soapAction="http://tempuri.org/IService1/UpdateAuthority" style="document" />
+    <wsdl:operation name="_VIEWALLFILES">
+      <soap:operation soapAction="http://tempuri.org/IService1/_VIEWALLFILES" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -195,8 +195,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="InsertAuthority">
-      <soap:operation soapAction="http://tempuri.org/IService1/InsertAuthority" style="document" />
+    <wsdl:operation name="_UpdateAuthority">
+      <soap:operation soapAction="http://tempuri.org/IService1/_UpdateAuthority" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -204,8 +204,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="VIEWALLFILES">
-      <soap:operation soapAction="http://tempuri.org/IService1/VIEWALLFILES" style="document" />
+    <wsdl:operation name="_InsertAuthority">
+      <soap:operation soapAction="http://tempuri.org/IService1/_InsertAuthority" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -213,8 +213,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="verify">
-      <soap:operation soapAction="http://tempuri.org/IService1/verify" style="document" />
+    <wsdl:operation name="_verify">
+      <soap:operation soapAction="http://tempuri.org/IService1/_verify" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

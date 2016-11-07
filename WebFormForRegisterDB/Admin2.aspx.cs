@@ -13,7 +13,7 @@ namespace WebFormForRegisterDB
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            GridView1.DataSource = svc.viewALL();
+            GridView1.DataSource = svc._VIEWALLFILES();
             GridView1.DataBind();
         }
 

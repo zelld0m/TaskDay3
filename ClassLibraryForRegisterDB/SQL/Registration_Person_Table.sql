@@ -1,3 +1,8 @@
+select * from dbo.authoritylevel
+
+
+select * from dbo.Persons
+
 
 
 use Registration;
@@ -11,18 +16,13 @@ Username varchar(255),
 Password varchar(255),
 Address varchar(255),
 City varchar(255),
-A_ID int NOT NULL,
+A_ID int  NOT NULL
 
 )
-select * from Persons
-
-
-
-
 
 use Registration;
 
 insert into Persons(LastName,FirstName,Username,Password,Address,City,A_ID)
-values('aizel','nunag','zell','potato','bangkal','makati',5),
-('noel','corales','noel','humanR','shaw','mandaluyong',1),
-('lim','elisa','elsie','kap','nova','qc',4);
+values('aizel','nunag','zell','potato','bangkal','makati',1),
+('noel','corales','noel','humanR','shaw','mandaluyong',2),
+('lim','elisa','elsie','kap','nova','qc',3);

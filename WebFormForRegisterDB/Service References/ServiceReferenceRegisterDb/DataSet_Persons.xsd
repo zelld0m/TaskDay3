@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns="http://tempuri.org/DataSet_Persons.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:mstns="http://tempuri.org/DataSet_Persons.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/DataSet_Persons.xsd" id="DataSet_Persons" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns="http://tempuri.org/DataSet_Persons.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/DataSet_Persons.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/DataSet_Persons.xsd" id="DataSet_Persons" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="DataSet_Persons">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
@@ -42,14 +42,6 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element minOccurs="0" name="City">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="A_ID" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -92,13 +84,6 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element minOccurs="0" name="City">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="255" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
               <xs:element name="AccessLevel" type="xs:int" />
               <xs:element name="AuthorityName">
                 <xs:simpleType>
@@ -107,13 +92,9 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="A_ID" type="xs:int" />
-              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="AA_ID" type="xs:int" />
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="A_Id" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
-        </xs:element>
-        <xs:element msprop:Generator_UserTableName="AuthorityLevel_Update/Insert" msprop:Generator_TableVarName="_tableAuthorityLevel_Update_Insert" name="AuthorityLevel_Update_x002F_Insert">
-          <xs:complexType />
         </xs:element>
       </xs:choice>
     </xs:complexType>

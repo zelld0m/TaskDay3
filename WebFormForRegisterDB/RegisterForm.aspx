@@ -128,7 +128,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style4">City<table class="auto-style9">
+                <td class="auto-style4"><table class="auto-style9">
                     <tr>
                         <td>Authority Name<table class="nav-justified">
                             <tr>
@@ -143,7 +143,6 @@
                     </table>
                 </td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="Tb_City" runat="server"></asp:TextBox>
                     <table class="nav-justified">
                         <tr>
                             <td>

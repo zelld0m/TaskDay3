@@ -47,6 +47,14 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/deleteEntry", ReplyAction="http://tempuri.org/IService1/deleteEntryResponse")]
         System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryResponse> deleteEntryAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryRequest request);
         
+        // CODEGEN: Parameter '_insertPersonResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_insertPerson", ReplyAction="http://tempuri.org/IService1/_insertPersonResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonResponse _insertPerson(WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_insertPerson", ReplyAction="http://tempuri.org/IService1/_insertPersonResponse")]
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonResponse> _insertPersonAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest request);
+        
         // CODEGEN: Parameter 'UpdateEntryResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateEntry", ReplyAction="http://tempuri.org/IService1/UpdateEntryResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -54,14 +62,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateEntry", ReplyAction="http://tempuri.org/IService1/UpdateEntryResponse")]
         System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryResponse> UpdateEntryAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryRequest request);
-        
-        // CODEGEN: Parameter 'AddEntryResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddEntry", ReplyAction="http://tempuri.org/IService1/AddEntryResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.AddEntryResponse AddEntry(WebFormForRegisterDB.ServiceReferenceRegisterDb.AddEntryRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddEntry", ReplyAction="http://tempuri.org/IService1/AddEntryResponse")]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.AddEntryResponse> AddEntryAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.AddEntryRequest request);
         
         // CODEGEN: Parameter 'UserViewOnlyResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UserViewOnly", ReplyAction="http://tempuri.org/IService1/UserViewOnlyResponse")]
@@ -71,37 +71,37 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UserViewOnly", ReplyAction="http://tempuri.org/IService1/UserViewOnlyResponse")]
         System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyResponse> UserViewOnlyAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyRequest request);
         
-        // CODEGEN: Parameter 'UpdateAuthorityResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateAuthority", ReplyAction="http://tempuri.org/IService1/UpdateAuthorityResponse")]
+        // CODEGEN: Parameter '_VIEWALLFILESResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_VIEWALLFILES", ReplyAction="http://tempuri.org/IService1/_VIEWALLFILESResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityResponse UpdateAuthority(WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityRequest request);
+        WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESResponse _VIEWALLFILES(WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateAuthority", ReplyAction="http://tempuri.org/IService1/UpdateAuthorityResponse")]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityResponse> UpdateAuthorityAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_VIEWALLFILES", ReplyAction="http://tempuri.org/IService1/_VIEWALLFILESResponse")]
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESResponse> _VIEWALLFILESAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESRequest request);
         
-        // CODEGEN: Parameter 'InsertAuthorityResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertAuthority", ReplyAction="http://tempuri.org/IService1/InsertAuthorityResponse")]
+        // CODEGEN: Parameter '_UpdateAuthorityResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_UpdateAuthority", ReplyAction="http://tempuri.org/IService1/_UpdateAuthorityResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityResponse InsertAuthority(WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityRequest request);
+        WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityResponse _UpdateAuthority(WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertAuthority", ReplyAction="http://tempuri.org/IService1/InsertAuthorityResponse")]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityResponse> InsertAuthorityAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_UpdateAuthority", ReplyAction="http://tempuri.org/IService1/_UpdateAuthorityResponse")]
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityResponse> _UpdateAuthorityAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityRequest request);
         
-        // CODEGEN: Parameter 'VIEWALLFILESResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/VIEWALLFILES", ReplyAction="http://tempuri.org/IService1/VIEWALLFILESResponse")]
+        // CODEGEN: Parameter '_InsertAuthorityResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_InsertAuthority", ReplyAction="http://tempuri.org/IService1/_InsertAuthorityResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESResponse VIEWALLFILES(WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESRequest request);
+        WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityResponse _InsertAuthority(WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/VIEWALLFILES", ReplyAction="http://tempuri.org/IService1/VIEWALLFILESResponse")]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESResponse> VIEWALLFILESAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_InsertAuthority", ReplyAction="http://tempuri.org/IService1/_InsertAuthorityResponse")]
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityResponse> _InsertAuthorityAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityRequest request);
         
-        // CODEGEN: Parameter 'verifyResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/verify", ReplyAction="http://tempuri.org/IService1/verifyResponse")]
+        // CODEGEN: Parameter '_verifyResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_verify", ReplyAction="http://tempuri.org/IService1/_verifyResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyResponse verify(WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyRequest request);
+        WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyResponse _verify(WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/verify", ReplyAction="http://tempuri.org/IService1/verifyResponse")]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyResponse> verifyAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_verify", ReplyAction="http://tempuri.org/IService1/_verifyResponse")]
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyResponse> _verifyAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -251,8 +251,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         
         private PersonAndAuthorityDataTable tablePersonAndAuthority;
         
-        private _AuthorityLevel_Update_InsertDataTable _tableAuthorityLevel_Update_Insert;
-        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -286,9 +284,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                 }
                 if ((ds.Tables["PersonAndAuthority"] != null)) {
                     base.Tables.Add(new PersonAndAuthorityDataTable(ds.Tables["PersonAndAuthority"]));
-                }
-                if ((ds.Tables["AuthorityLevel_Update/Insert"] != null)) {
-                    base.Tables.Add(new _AuthorityLevel_Update_InsertDataTable(ds.Tables["AuthorityLevel_Update/Insert"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -325,16 +320,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         public PersonAndAuthorityDataTable PersonAndAuthority {
             get {
                 return this.tablePersonAndAuthority;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public _AuthorityLevel_Update_InsertDataTable _AuthorityLevel_Update_Insert {
-            get {
-                return this._tableAuthorityLevel_Update_Insert;
             }
         }
         
@@ -411,9 +396,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                 if ((ds.Tables["PersonAndAuthority"] != null)) {
                     base.Tables.Add(new PersonAndAuthorityDataTable(ds.Tables["PersonAndAuthority"]));
                 }
-                if ((ds.Tables["AuthorityLevel_Update/Insert"] != null)) {
-                    base.Tables.Add(new _AuthorityLevel_Update_InsertDataTable(ds.Tables["AuthorityLevel_Update/Insert"]));
-                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -459,12 +441,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                     this.tablePersonAndAuthority.InitVars();
                 }
             }
-            this._tableAuthorityLevel_Update_Insert = ((_AuthorityLevel_Update_InsertDataTable)(base.Tables["AuthorityLevel_Update/Insert"]));
-            if ((initTable == true)) {
-                if ((this._tableAuthorityLevel_Update_Insert != null)) {
-                    this._tableAuthorityLevel_Update_Insert.InitVars();
-                }
-            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -479,8 +455,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             base.Tables.Add(this.tablePersons);
             this.tablePersonAndAuthority = new PersonAndAuthorityDataTable();
             base.Tables.Add(this.tablePersonAndAuthority);
-            this._tableAuthorityLevel_Update_Insert = new _AuthorityLevel_Update_InsertDataTable();
-            base.Tables.Add(this._tableAuthorityLevel_Update_Insert);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -492,12 +466,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializePersonAndAuthority() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerialize_AuthorityLevel_Update_Insert() {
             return false;
         }
         
@@ -562,9 +530,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void PersonAndAuthorityRowChangeEventHandler(object sender, PersonAndAuthorityRowChangeEvent e);
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void _AuthorityLevel_Update_InsertRowChangeEventHandler(object sender, _AuthorityLevel_Update_InsertRowChangeEvent e);
-        
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
@@ -583,10 +548,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             private global::System.Data.DataColumn columnPassword;
             
             private global::System.Data.DataColumn columnAddress;
-            
-            private global::System.Data.DataColumn columnCity;
-            
-            private global::System.Data.DataColumn columnA_ID;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -671,22 +632,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CityColumn {
-                get {
-                    return this.columnCity;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn A_IDColumn {
-                get {
-                    return this.columnA_ID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -722,7 +667,7 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public PersonsRow AddPersonsRow(string LastName, string FirstName, string Username, string Password, string Address, string City, int A_ID) {
+            public PersonsRow AddPersonsRow(string LastName, string FirstName, string Username, string Password, string Address) {
                 PersonsRow rowPersonsRow = ((PersonsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -730,9 +675,7 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                         FirstName,
                         Username,
                         Password,
-                        Address,
-                        City,
-                        A_ID};
+                        Address};
                 rowPersonsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPersonsRow);
                 return rowPersonsRow;
@@ -768,8 +711,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                 this.columnUsername = base.Columns["Username"];
                 this.columnPassword = base.Columns["Password"];
                 this.columnAddress = base.Columns["Address"];
-                this.columnCity = base.Columns["City"];
-                this.columnA_ID = base.Columns["A_ID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -787,10 +728,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                 base.Columns.Add(this.columnPassword);
                 this.columnAddress = new global::System.Data.DataColumn("Address", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAddress);
-                this.columnCity = new global::System.Data.DataColumn("City", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCity);
-                this.columnA_ID = new global::System.Data.DataColumn("A_ID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnA_ID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnP_Id}, true));
                 this.columnP_Id.AutoIncrement = true;
@@ -805,8 +742,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                 this.columnUsername.MaxLength = 255;
                 this.columnPassword.MaxLength = 255;
                 this.columnAddress.MaxLength = 255;
-                this.columnCity.MaxLength = 255;
-                this.columnA_ID.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -952,15 +887,11 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             private global::System.Data.DataColumn columnAddress;
             
-            private global::System.Data.DataColumn columnCity;
-            
             private global::System.Data.DataColumn columnAccessLevel;
             
             private global::System.Data.DataColumn columnAuthorityName;
             
-            private global::System.Data.DataColumn columnA_ID;
-            
-            private global::System.Data.DataColumn columnAA_ID;
+            private global::System.Data.DataColumn columnA_Id;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -1045,14 +976,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CityColumn {
-                get {
-                    return this.columnCity;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn AccessLevelColumn {
                 get {
                     return this.columnAccessLevel;
@@ -1069,17 +992,9 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn A_IDColumn {
+            public global::System.Data.DataColumn A_IdColumn {
                 get {
-                    return this.columnA_ID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn AA_IDColumn {
-                get {
-                    return this.columnAA_ID;
+                    return this.columnA_Id;
                 }
             }
             
@@ -1120,7 +1035,7 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public PersonAndAuthorityRow AddPersonAndAuthorityRow(string LastName, string FirstName, string Username, string Password, string Address, string City, int AccessLevel, string AuthorityName, int A_ID) {
+            public PersonAndAuthorityRow AddPersonAndAuthorityRow(string LastName, string FirstName, string Username, string Password, string Address, int AccessLevel, string AuthorityName) {
                 PersonAndAuthorityRow rowPersonAndAuthorityRow = ((PersonAndAuthorityRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1129,10 +1044,8 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                         Username,
                         Password,
                         Address,
-                        City,
                         AccessLevel,
                         AuthorityName,
-                        A_ID,
                         null};
                 rowPersonAndAuthorityRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPersonAndAuthorityRow);
@@ -1169,11 +1082,9 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                 this.columnUsername = base.Columns["Username"];
                 this.columnPassword = base.Columns["Password"];
                 this.columnAddress = base.Columns["Address"];
-                this.columnCity = base.Columns["City"];
                 this.columnAccessLevel = base.Columns["AccessLevel"];
                 this.columnAuthorityName = base.Columns["AuthorityName"];
-                this.columnA_ID = base.Columns["A_ID"];
-                this.columnAA_ID = base.Columns["AA_ID"];
+                this.columnA_Id = base.Columns["A_Id"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1191,16 +1102,12 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                 base.Columns.Add(this.columnPassword);
                 this.columnAddress = new global::System.Data.DataColumn("Address", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAddress);
-                this.columnCity = new global::System.Data.DataColumn("City", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCity);
                 this.columnAccessLevel = new global::System.Data.DataColumn("AccessLevel", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAccessLevel);
                 this.columnAuthorityName = new global::System.Data.DataColumn("AuthorityName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAuthorityName);
-                this.columnA_ID = new global::System.Data.DataColumn("A_ID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnA_ID);
-                this.columnAA_ID = new global::System.Data.DataColumn("AA_ID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAA_ID);
+                this.columnA_Id = new global::System.Data.DataColumn("A_Id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnA_Id);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnP_Id}, true));
                 this.columnP_Id.AutoIncrement = true;
@@ -1215,16 +1122,14 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                 this.columnUsername.MaxLength = 255;
                 this.columnPassword.MaxLength = 255;
                 this.columnAddress.MaxLength = 255;
-                this.columnCity.MaxLength = 255;
                 this.columnAccessLevel.AllowDBNull = false;
                 this.columnAuthorityName.AllowDBNull = false;
                 this.columnAuthorityName.MaxLength = 255;
-                this.columnA_ID.AllowDBNull = false;
-                this.columnAA_ID.AutoIncrement = true;
-                this.columnAA_ID.AutoIncrementSeed = -1;
-                this.columnAA_ID.AutoIncrementStep = -1;
-                this.columnAA_ID.AllowDBNull = false;
-                this.columnAA_ID.ReadOnly = true;
+                this.columnA_Id.AutoIncrement = true;
+                this.columnA_Id.AutoIncrementSeed = -1;
+                this.columnA_Id.AutoIncrementStep = -1;
+                this.columnA_Id.AllowDBNull = false;
+                this.columnA_Id.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1311,241 +1216,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "PersonAndAuthorityDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class _AuthorityLevel_Update_InsertDataTable : global::System.Data.TypedTableBase<_AuthorityLevel_Update_InsertRow> {
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public _AuthorityLevel_Update_InsertDataTable() {
-                this.TableName = "AuthorityLevel_Update/Insert";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal _AuthorityLevel_Update_InsertDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected _AuthorityLevel_Update_InsertDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public _AuthorityLevel_Update_InsertRow this[int index] {
-                get {
-                    return ((_AuthorityLevel_Update_InsertRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event _AuthorityLevel_Update_InsertRowChangeEventHandler _AuthorityLevel_Update_InsertRowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event _AuthorityLevel_Update_InsertRowChangeEventHandler _AuthorityLevel_Update_InsertRowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event _AuthorityLevel_Update_InsertRowChangeEventHandler _AuthorityLevel_Update_InsertRowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event _AuthorityLevel_Update_InsertRowChangeEventHandler _AuthorityLevel_Update_InsertRowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Add_AuthorityLevel_Update_InsertRow(_AuthorityLevel_Update_InsertRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public _AuthorityLevel_Update_InsertRow Add_AuthorityLevel_Update_InsertRow() {
-                _AuthorityLevel_Update_InsertRow row_AuthorityLevel_Update_InsertRow = ((_AuthorityLevel_Update_InsertRow)(this.NewRow()));
-                object[] columnValuesArray = new object[0];
-                row_AuthorityLevel_Update_InsertRow.ItemArray = columnValuesArray;
-                this.Rows.Add(row_AuthorityLevel_Update_InsertRow);
-                return row_AuthorityLevel_Update_InsertRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                _AuthorityLevel_Update_InsertDataTable cln = ((_AuthorityLevel_Update_InsertDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new _AuthorityLevel_Update_InsertDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal void InitVars() {
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            private void InitClass() {
-                this.ExtendedProperties.Add("Generator_TableVarName", "_tableAuthorityLevel_Update_Insert");
-                this.ExtendedProperties.Add("Generator_UserTableName", "AuthorityLevel_Update/Insert");
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public _AuthorityLevel_Update_InsertRow New_AuthorityLevel_Update_InsertRow() {
-                return ((_AuthorityLevel_Update_InsertRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new _AuthorityLevel_Update_InsertRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(_AuthorityLevel_Update_InsertRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this._AuthorityLevel_Update_InsertRowChanged != null)) {
-                    this._AuthorityLevel_Update_InsertRowChanged(this, new _AuthorityLevel_Update_InsertRowChangeEvent(((_AuthorityLevel_Update_InsertRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this._AuthorityLevel_Update_InsertRowChanging != null)) {
-                    this._AuthorityLevel_Update_InsertRowChanging(this, new _AuthorityLevel_Update_InsertRowChangeEvent(((_AuthorityLevel_Update_InsertRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this._AuthorityLevel_Update_InsertRowDeleted != null)) {
-                    this._AuthorityLevel_Update_InsertRowDeleted(this, new _AuthorityLevel_Update_InsertRowChangeEvent(((_AuthorityLevel_Update_InsertRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this._AuthorityLevel_Update_InsertRowDeleting != null)) {
-                    this._AuthorityLevel_Update_InsertRowDeleting(this, new _AuthorityLevel_Update_InsertRowChangeEvent(((_AuthorityLevel_Update_InsertRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Remove_AuthorityLevel_Update_InsertRow(_AuthorityLevel_Update_InsertRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet_Persons ds = new DataSet_Persons();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "_AuthorityLevel_Update_InsertDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1688,33 +1358,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string City {
-                get {
-                    try {
-                        return ((string)(this[this.tablePersons.CityColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'City\' in table \'Persons\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablePersons.CityColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int A_ID {
-                get {
-                    return ((int)(this[this.tablePersons.A_IDColumn]));
-                }
-                set {
-                    this[this.tablePersons.A_IDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsFirstNameNull() {
                 return this.IsNull(this.tablePersons.FirstNameColumn);
             }
@@ -1759,18 +1402,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetAddressNull() {
                 this[this.tablePersons.AddressColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCityNull() {
-                return this.IsNull(this.tablePersons.CityColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCityNull() {
-                this[this.tablePersons.CityColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1876,22 +1507,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string City {
-                get {
-                    try {
-                        return ((string)(this[this.tablePersonAndAuthority.CityColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'City\' in table \'PersonAndAuthority\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablePersonAndAuthority.CityColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int AccessLevel {
                 get {
                     return ((int)(this[this.tablePersonAndAuthority.AccessLevelColumn]));
@@ -1914,23 +1529,12 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int A_ID {
+            public int A_Id {
                 get {
-                    return ((int)(this[this.tablePersonAndAuthority.A_IDColumn]));
+                    return ((int)(this[this.tablePersonAndAuthority.A_IdColumn]));
                 }
                 set {
-                    this[this.tablePersonAndAuthority.A_IDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int AA_ID {
-                get {
-                    return ((int)(this[this.tablePersonAndAuthority.AA_IDColumn]));
-                }
-                set {
-                    this[this.tablePersonAndAuthority.AA_IDColumn] = value;
+                    this[this.tablePersonAndAuthority.A_IdColumn] = value;
                 }
             }
             
@@ -1980,33 +1584,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetAddressNull() {
                 this[this.tablePersonAndAuthority.AddressColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCityNull() {
-                return this.IsNull(this.tablePersonAndAuthority.CityColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCityNull() {
-                this[this.tablePersonAndAuthority.CityColumn] = global::System.Convert.DBNull;
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class _AuthorityLevel_Update_InsertRow : global::System.Data.DataRow {
-            
-            private _AuthorityLevel_Update_InsertDataTable _tableAuthorityLevel_Update_Insert;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal _AuthorityLevel_Update_InsertRow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this._tableAuthorityLevel_Update_Insert = ((_AuthorityLevel_Update_InsertDataTable)(this.Table));
             }
         }
         
@@ -2064,40 +1641,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public PersonAndAuthorityRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class _AuthorityLevel_Update_InsertRowChangeEvent : global::System.EventArgs {
-            
-            private _AuthorityLevel_Update_InsertRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public _AuthorityLevel_Update_InsertRowChangeEvent(_AuthorityLevel_Update_InsertRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public _AuthorityLevel_Update_InsertRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -2179,6 +1722,62 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="_insertPerson", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class _insertPersonRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string LastName;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string FirstName;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string UserName;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=3)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Password;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=4)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Address;
+        
+        public _insertPersonRequest() {
+        }
+        
+        public _insertPersonRequest(string LastName, string FirstName, string UserName, string Password, string Address) {
+            this.LastName = LastName;
+            this.FirstName = FirstName;
+            this.UserName = UserName;
+            this.Password = Password;
+            this.Address = Address;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="_insertPersonResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class _insertPersonResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public DataSet_Persons.PersonsDataTable _insertPersonResult;
+        
+        public _insertPersonResponse() {
+        }
+        
+        public _insertPersonResponse(DataSet_Persons.PersonsDataTable _insertPersonResult) {
+            this._insertPersonResult = _insertPersonResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="UpdateEntry", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
     public partial class UpdateEntryRequest {
         
@@ -2203,27 +1802,18 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         public string Address;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=5)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string City;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=6)]
-        public int Authority;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=7)]
-        public int input_ID_toEdit;
+        public int user_ID_to_update;
         
         public UpdateEntryRequest() {
         }
         
-        public UpdateEntryRequest(string LastName, string FirstName, string UserName, string Password, string Address, string City, int Authority, int input_ID_toEdit) {
+        public UpdateEntryRequest(string LastName, string FirstName, string UserName, string Password, string Address, int user_ID_to_update) {
             this.LastName = LastName;
             this.FirstName = FirstName;
             this.UserName = UserName;
             this.Password = Password;
             this.Address = Address;
-            this.City = City;
-            this.Authority = Authority;
-            this.input_ID_toEdit = input_ID_toEdit;
+            this.user_ID_to_update = user_ID_to_update;
         }
     }
     
@@ -2242,71 +1832,6 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         
         public UpdateEntryResponse(DataSet_Persons.PersonsDataTable UpdateEntryResult) {
             this.UpdateEntryResult = UpdateEntryResult;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddEntry", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class AddEntryRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string LastName;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string FirstName;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string UserName;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=3)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string Password;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=4)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string Address;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=5)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string City;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=6)]
-        public int AuthorityLevel;
-        
-        public AddEntryRequest() {
-        }
-        
-        public AddEntryRequest(string LastName, string FirstName, string UserName, string Password, string Address, string City, int AuthorityLevel) {
-            this.LastName = LastName;
-            this.FirstName = FirstName;
-            this.UserName = UserName;
-            this.Password = Password;
-            this.Address = Address;
-            this.City = City;
-            this.AuthorityLevel = AuthorityLevel;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddEntryResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class AddEntryResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public DataSet_Persons.PersonsDataTable AddEntryResult;
-        
-        public AddEntryResponse() {
-        }
-        
-        public AddEntryResponse(DataSet_Persons.PersonsDataTable AddEntryResult) {
-            this.AddEntryResult = AddEntryResult;
         }
     }
     
@@ -2341,8 +1866,36 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UpdateAuthority", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class UpdateAuthorityRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="_VIEWALLFILES", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class _VIEWALLFILESRequest {
+        
+        public _VIEWALLFILESRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="_VIEWALLFILESResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class _VIEWALLFILESResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public DataSet_Persons.PersonAndAuthorityDataTable _VIEWALLFILESResult;
+        
+        public _VIEWALLFILESResponse() {
+        }
+        
+        public _VIEWALLFILESResponse(DataSet_Persons.PersonAndAuthorityDataTable _VIEWALLFILESResult) {
+            this._VIEWALLFILESResult = _VIEWALLFILESResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="_UpdateAuthority", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class _UpdateAuthorityRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -2352,41 +1905,41 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         public int newAccessLevel;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=2)]
-        public int inputID_toUpdate;
+        public int input_P_ID_toUpdate;
         
-        public UpdateAuthorityRequest() {
+        public _UpdateAuthorityRequest() {
         }
         
-        public UpdateAuthorityRequest(string newAuthorityName, int newAccessLevel, int inputID_toUpdate) {
+        public _UpdateAuthorityRequest(string newAuthorityName, int newAccessLevel, int input_P_ID_toUpdate) {
             this.newAuthorityName = newAuthorityName;
             this.newAccessLevel = newAccessLevel;
-            this.inputID_toUpdate = inputID_toUpdate;
+            this.input_P_ID_toUpdate = input_P_ID_toUpdate;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UpdateAuthorityResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class UpdateAuthorityResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="_UpdateAuthorityResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class _UpdateAuthorityResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public DataSet_Persons._AuthorityLevel_Update_InsertDataTable UpdateAuthorityResult;
+        public DataSet_Persons.PersonAndAuthorityDataTable _UpdateAuthorityResult;
         
-        public UpdateAuthorityResponse() {
+        public _UpdateAuthorityResponse() {
         }
         
-        public UpdateAuthorityResponse(DataSet_Persons._AuthorityLevel_Update_InsertDataTable UpdateAuthorityResult) {
-            this.UpdateAuthorityResult = UpdateAuthorityResult;
+        public _UpdateAuthorityResponse(DataSet_Persons.PersonAndAuthorityDataTable _UpdateAuthorityResult) {
+            this._UpdateAuthorityResult = _UpdateAuthorityResult;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="InsertAuthority", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class InsertAuthorityRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="_InsertAuthority", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class _InsertAuthorityRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -2395,10 +1948,10 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
         public int newAccessLevel;
         
-        public InsertAuthorityRequest() {
+        public _InsertAuthorityRequest() {
         }
         
-        public InsertAuthorityRequest(string newAuthorityName, int newAccessLevel) {
+        public _InsertAuthorityRequest(string newAuthorityName, int newAccessLevel) {
             this.newAuthorityName = newAuthorityName;
             this.newAccessLevel = newAccessLevel;
         }
@@ -2407,54 +1960,26 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="InsertAuthorityResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class InsertAuthorityResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="_InsertAuthorityResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class _InsertAuthorityResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public DataSet_Persons._AuthorityLevel_Update_InsertDataTable InsertAuthorityResult;
+        public DataSet_Persons.PersonAndAuthorityDataTable _InsertAuthorityResult;
         
-        public InsertAuthorityResponse() {
+        public _InsertAuthorityResponse() {
         }
         
-        public InsertAuthorityResponse(DataSet_Persons._AuthorityLevel_Update_InsertDataTable InsertAuthorityResult) {
-            this.InsertAuthorityResult = InsertAuthorityResult;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="VIEWALLFILES", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class VIEWALLFILESRequest {
-        
-        public VIEWALLFILESRequest() {
+        public _InsertAuthorityResponse(DataSet_Persons.PersonAndAuthorityDataTable _InsertAuthorityResult) {
+            this._InsertAuthorityResult = _InsertAuthorityResult;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="VIEWALLFILESResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class VIEWALLFILESResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public DataSet_Persons.PersonAndAuthorityDataTable VIEWALLFILESResult;
-        
-        public VIEWALLFILESResponse() {
-        }
-        
-        public VIEWALLFILESResponse(DataSet_Persons.PersonAndAuthorityDataTable VIEWALLFILESResult) {
-            this.VIEWALLFILESResult = VIEWALLFILESResult;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="verify", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class verifyRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="_verify", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class _verifyRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -2464,10 +1989,10 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string Password;
         
-        public verifyRequest() {
+        public _verifyRequest() {
         }
         
-        public verifyRequest(string Username, string Password) {
+        public _verifyRequest(string Username, string Password) {
             this.Username = Username;
             this.Password = Password;
         }
@@ -2476,18 +2001,18 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="verifyResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
-    public partial class verifyResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="_verifyResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class _verifyResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public DataSet_Persons.PersonAndAuthorityDataTable verifyResult;
+        public DataSet_Persons.PersonAndAuthorityDataTable _verifyResult;
         
-        public verifyResponse() {
+        public _verifyResponse() {
         }
         
-        public verifyResponse(DataSet_Persons.PersonAndAuthorityDataTable verifyResult) {
-            this.verifyResult = verifyResult;
+        public _verifyResponse(DataSet_Persons.PersonAndAuthorityDataTable _verifyResult) {
+            this._verifyResult = _verifyResult;
         }
     }
     
@@ -2609,20 +2134,49 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1._insertPerson(WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest request) {
+            return base.Channel._insertPerson(request);
+        }
+        
+        public DataSet_Persons.PersonsDataTable _insertPerson(string LastName, string FirstName, string UserName, string Password, string Address) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest();
+            inValue.LastName = LastName;
+            inValue.FirstName = FirstName;
+            inValue.UserName = UserName;
+            inValue.Password = Password;
+            inValue.Address = Address;
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this))._insertPerson(inValue);
+            return retVal._insertPersonResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1._insertPersonAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest request) {
+            return base.Channel._insertPersonAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonResponse> _insertPersonAsync(string LastName, string FirstName, string UserName, string Password, string Address) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonRequest();
+            inValue.LastName = LastName;
+            inValue.FirstName = FirstName;
+            inValue.UserName = UserName;
+            inValue.Password = Password;
+            inValue.Address = Address;
+            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this))._insertPersonAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.UpdateEntry(WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryRequest request) {
             return base.Channel.UpdateEntry(request);
         }
         
-        public DataSet_Persons.PersonsDataTable UpdateEntry(string LastName, string FirstName, string UserName, string Password, string Address, string City, int Authority, int input_ID_toEdit) {
+        public DataSet_Persons.PersonsDataTable UpdateEntry(string LastName, string FirstName, string UserName, string Password, string Address, int user_ID_to_update) {
             WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryRequest();
             inValue.LastName = LastName;
             inValue.FirstName = FirstName;
             inValue.UserName = UserName;
             inValue.Password = Password;
             inValue.Address = Address;
-            inValue.City = City;
-            inValue.Authority = Authority;
-            inValue.input_ID_toEdit = input_ID_toEdit;
+            inValue.user_ID_to_update = user_ID_to_update;
             WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).UpdateEntry(inValue);
             return retVal.UpdateEntryResult;
         }
@@ -2632,52 +2186,15 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             return base.Channel.UpdateEntryAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryResponse> UpdateEntryAsync(string LastName, string FirstName, string UserName, string Password, string Address, string City, int Authority, int input_ID_toEdit) {
+        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryResponse> UpdateEntryAsync(string LastName, string FirstName, string UserName, string Password, string Address, int user_ID_to_update) {
             WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateEntryRequest();
             inValue.LastName = LastName;
             inValue.FirstName = FirstName;
             inValue.UserName = UserName;
             inValue.Password = Password;
             inValue.Address = Address;
-            inValue.City = City;
-            inValue.Authority = Authority;
-            inValue.input_ID_toEdit = input_ID_toEdit;
+            inValue.user_ID_to_update = user_ID_to_update;
             return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).UpdateEntryAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.AddEntryResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.AddEntry(WebFormForRegisterDB.ServiceReferenceRegisterDb.AddEntryRequest request) {
-            return base.Channel.AddEntry(request);
-        }
-        
-        public DataSet_Persons.PersonsDataTable AddEntry(string LastName, string FirstName, string UserName, string Password, string Address, string City, int AuthorityLevel) {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.AddEntryRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.AddEntryRequest();
-            inValue.LastName = LastName;
-            inValue.FirstName = FirstName;
-            inValue.UserName = UserName;
-            inValue.Password = Password;
-            inValue.Address = Address;
-            inValue.City = City;
-            inValue.AuthorityLevel = AuthorityLevel;
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.AddEntryResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).AddEntry(inValue);
-            return retVal.AddEntryResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.AddEntryResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.AddEntryAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.AddEntryRequest request) {
-            return base.Channel.AddEntryAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.AddEntryResponse> AddEntryAsync(string LastName, string FirstName, string UserName, string Password, string Address, string City, int AuthorityLevel) {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.AddEntryRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.AddEntryRequest();
-            inValue.LastName = LastName;
-            inValue.FirstName = FirstName;
-            inValue.UserName = UserName;
-            inValue.Password = Password;
-            inValue.Address = Address;
-            inValue.City = City;
-            inValue.AuthorityLevel = AuthorityLevel;
-            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).AddEntryAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -2702,101 +2219,101 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.UpdateAuthority(WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityRequest request) {
-            return base.Channel.UpdateAuthority(request);
+        WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1._VIEWALLFILES(WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESRequest request) {
+            return base.Channel._VIEWALLFILES(request);
         }
         
-        public DataSet_Persons._AuthorityLevel_Update_InsertDataTable UpdateAuthority(string newAuthorityName, int newAccessLevel, int inputID_toUpdate) {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityRequest();
+        public DataSet_Persons.PersonAndAuthorityDataTable _VIEWALLFILES() {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESRequest();
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this))._VIEWALLFILES(inValue);
+            return retVal._VIEWALLFILESResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1._VIEWALLFILESAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESRequest request) {
+            return base.Channel._VIEWALLFILESAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESResponse> _VIEWALLFILESAsync() {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESRequest();
+            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this))._VIEWALLFILESAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1._UpdateAuthority(WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityRequest request) {
+            return base.Channel._UpdateAuthority(request);
+        }
+        
+        public DataSet_Persons.PersonAndAuthorityDataTable _UpdateAuthority(string newAuthorityName, int newAccessLevel, int input_P_ID_toUpdate) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityRequest();
             inValue.newAuthorityName = newAuthorityName;
             inValue.newAccessLevel = newAccessLevel;
-            inValue.inputID_toUpdate = inputID_toUpdate;
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).UpdateAuthority(inValue);
-            return retVal.UpdateAuthorityResult;
+            inValue.input_P_ID_toUpdate = input_P_ID_toUpdate;
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this))._UpdateAuthority(inValue);
+            return retVal._UpdateAuthorityResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.UpdateAuthorityAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityRequest request) {
-            return base.Channel.UpdateAuthorityAsync(request);
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1._UpdateAuthorityAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityRequest request) {
+            return base.Channel._UpdateAuthorityAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityResponse> UpdateAuthorityAsync(string newAuthorityName, int newAccessLevel, int inputID_toUpdate) {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityRequest();
+        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityResponse> _UpdateAuthorityAsync(string newAuthorityName, int newAccessLevel, int input_P_ID_toUpdate) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityRequest();
             inValue.newAuthorityName = newAuthorityName;
             inValue.newAccessLevel = newAccessLevel;
-            inValue.inputID_toUpdate = inputID_toUpdate;
-            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).UpdateAuthorityAsync(inValue);
+            inValue.input_P_ID_toUpdate = input_P_ID_toUpdate;
+            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this))._UpdateAuthorityAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.InsertAuthority(WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityRequest request) {
-            return base.Channel.InsertAuthority(request);
+        WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1._InsertAuthority(WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityRequest request) {
+            return base.Channel._InsertAuthority(request);
         }
         
-        public DataSet_Persons._AuthorityLevel_Update_InsertDataTable InsertAuthority(string newAuthorityName, int newAccessLevel) {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityRequest();
+        public DataSet_Persons.PersonAndAuthorityDataTable _InsertAuthority(string newAuthorityName, int newAccessLevel) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityRequest();
             inValue.newAuthorityName = newAuthorityName;
             inValue.newAccessLevel = newAccessLevel;
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).InsertAuthority(inValue);
-            return retVal.InsertAuthorityResult;
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this))._InsertAuthority(inValue);
+            return retVal._InsertAuthorityResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.InsertAuthorityAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityRequest request) {
-            return base.Channel.InsertAuthorityAsync(request);
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1._InsertAuthorityAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityRequest request) {
+            return base.Channel._InsertAuthorityAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityResponse> InsertAuthorityAsync(string newAuthorityName, int newAccessLevel) {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityRequest();
+        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityResponse> _InsertAuthorityAsync(string newAuthorityName, int newAccessLevel) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityRequest();
             inValue.newAuthorityName = newAuthorityName;
             inValue.newAccessLevel = newAccessLevel;
-            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).InsertAuthorityAsync(inValue);
+            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this))._InsertAuthorityAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.VIEWALLFILES(WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESRequest request) {
-            return base.Channel.VIEWALLFILES(request);
+        WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1._verify(WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyRequest request) {
+            return base.Channel._verify(request);
         }
         
-        public DataSet_Persons.PersonAndAuthorityDataTable VIEWALLFILES() {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESRequest();
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).VIEWALLFILES(inValue);
-            return retVal.VIEWALLFILESResult;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.VIEWALLFILESAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESRequest request) {
-            return base.Channel.VIEWALLFILESAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESResponse> VIEWALLFILESAsync() {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESRequest();
-            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).VIEWALLFILESAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.verify(WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyRequest request) {
-            return base.Channel.verify(request);
-        }
-        
-        public DataSet_Persons.PersonAndAuthorityDataTable verify(string Username, string Password) {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyRequest();
+        public DataSet_Persons.PersonAndAuthorityDataTable _verify(string Username, string Password) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyRequest();
             inValue.Username = Username;
             inValue.Password = Password;
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).verify(inValue);
-            return retVal.verifyResult;
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this))._verify(inValue);
+            return retVal._verifyResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1.verifyAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyRequest request) {
-            return base.Channel.verifyAsync(request);
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1._verifyAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyRequest request) {
+            return base.Channel._verifyAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyResponse> verifyAsync(string Username, string Password) {
-            WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyRequest();
+        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyResponse> _verifyAsync(string Username, string Password) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyRequest();
             inValue.Username = Username;
             inValue.Password = Password;
-            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this)).verifyAsync(inValue);
+            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this))._verifyAsync(inValue);
         }
     }
 }

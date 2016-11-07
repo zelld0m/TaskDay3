@@ -2,7 +2,7 @@
 
 
 use Registration;
---drop table AuthorityLevel
+drop table AuthorityLevel
 CREATE TABLE AuthorityLevel
 (
 A_Id int IDENTITY(1,1) NOT NULL PRIMARY KEY,

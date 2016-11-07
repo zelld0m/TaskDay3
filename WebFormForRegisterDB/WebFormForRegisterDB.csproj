@@ -122,9 +122,6 @@
     <None Include="Service References\ServiceReferenceRegisterDb\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.AddEntryResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
     <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.deleteEntryResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -134,16 +131,19 @@
     <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.UserViewOnlyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.InsertAuthorityResponse.datasource">
+    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb._InsertAuthorityResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.UpdateAuthorityResponse.datasource">
+    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb._insertPersonResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.VIEWALLFILESResponse.datasource">
+    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb._UpdateAuthorityResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.verifyResponse.datasource">
+    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb._VIEWALLFILESResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">

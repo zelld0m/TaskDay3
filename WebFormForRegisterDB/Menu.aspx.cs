@@ -24,7 +24,7 @@ namespace WebFormForRegisterDB
             // AccessLevel = Convert.ToInt16(svc.VIEWALLFILES().Rows[0][7]);
 
             
-            int x = svc.verify(tb_UserName.Text, Tb_Password.Text).Count;
+            int x = svc._verify(tb_UserName.Text, Tb_Password.Text).Count;
             
             
             ClearControls();

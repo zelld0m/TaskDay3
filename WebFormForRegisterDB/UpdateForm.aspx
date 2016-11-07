@@ -159,10 +159,9 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style10">City</td>
+                <td class="auto-style10">&nbsp;</td>
                 <td class="auto-style4">
-                    <asp:TextBox ID="Tb_City" runat="server"></asp:TextBox>
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style10">Authority Name</td>

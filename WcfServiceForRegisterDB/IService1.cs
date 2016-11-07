@@ -20,37 +20,36 @@ namespace WcfServiceForRegisterDB
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         // TODO: Add your service operations here
-        #region Persons
+        #region Persons   =0=================================================================
+
         [OperationContract]
         ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable viewALL();
         [OperationContract]
         ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable deleteEntry(int inputUserID_ToDelete);
         [OperationContract]
-        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable UpdateEntry(String LastName,String FirstName, String UserName, String Password, String Address, String City ,int Authority,int input_ID_toEdit);
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable _insertPerson(String LastName, String FirstName, String UserName, String Password, String Address);
         [OperationContract]
-        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable AddEntry(String LastName,String FirstName,String UserName,String Password, String Address,String City,int AuthorityLevel);
-      
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable UpdateEntry(String LastName,String FirstName, String UserName, String Password, String Address , int user_ID_to_update);
         [OperationContract]
         ClassLibraryForRegisterDB.DataSet_Persons.PersonsDataTable UserViewOnly();
 
-        #endregion Person
-        //----------------------------------------------------------------------
+        #endregion Person   =0=================================================================
+        
         #region Authority
-        [OperationContract]
-        ClassLibraryForRegisterDB.DataSet_Persons._AuthorityLevel_Update_InsertDataTable UpdateAuthority(String newAuthorityName,int newAccessLevel , int inputID_toUpdate);
-        [OperationContract]
-        ClassLibraryForRegisterDB.DataSet_Persons._AuthorityLevel_Update_InsertDataTable InsertAuthority(String newAuthorityName, int newAccessLevel);
 
+
+          [OperationContract]
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonAndAuthorityDataTable _VIEWALLFILES();
+
+        [OperationContract]
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonAndAuthorityDataTable _UpdateAuthority(String newAuthorityName, int newAccessLevel, int input_P_ID_toUpdate);
+        [OperationContract]
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonAndAuthorityDataTable _InsertAuthority(String newAuthorityName, int newAccessLevel);
+
+        [OperationContract]
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonAndAuthorityDataTable _verify(String Username , String Password);
+       
         #endregion Authority
-        //--------------------------------------------------------------------------------------
-        #region VIEWALLTABLE
-        [OperationContract]
-        ClassLibraryForRegisterDB.DataSet_Persons.PersonAndAuthorityDataTable VIEWALLFILES();
-
-        [OperationContract]
-        ClassLibraryForRegisterDB.DataSet_Persons.PersonAndAuthorityDataTable verify(String Username , String Password);
-        #endregion VIEWALLTABLE
-
 
     }
 
