@@ -80,6 +80,7 @@ namespace WcfServiceForRegisterDB
         DataSet_Persons.PersonsDataTable IService1.insertRegistrationQuery(string LastName, string FirstName, string UserName, string Password, string Address)
         {
             da._InsertRegistrationQuery(LastName, FirstName, UserName, Password, Address);
+            return dt;
             throw new NotImplementedException();
         }
         DataSet_Persons.PersonsDataTable IService1.ViewUserOnly()
@@ -110,8 +111,8 @@ namespace WcfServiceForRegisterDB
 
         DataSet_Persons.PersonAndAuthorityDataTable IService1._InsertAuthority(string newAuthorityName, int newAccessLevel)
         {
-            da_personAndAuthority._Insert_Registration_Authority(newAuthorityName, newAccessLevel);
-            
+            da_personAndAuthority._Insert_Registration_Authority( dt_personAndAuthority, newAuthorityName, newAccessLevel);
+            return dt_personAndAuthority;
             throw new NotImplementedException();
         }
 

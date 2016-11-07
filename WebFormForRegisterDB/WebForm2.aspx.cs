@@ -15,5 +15,15 @@ namespace WebFormForRegisterDB
         {
      
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            svc1.insertRegistrationQuery(_Lname.Text, _Fname.Text, _Uname.Text, _Pasword.Text, _Address.Text);
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            svc1._InsertAuthority(_Aname.Text, Convert.ToInt32(_Accesslvl.Text));
+        }
     }
 }

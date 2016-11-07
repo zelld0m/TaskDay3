@@ -1959,7 +1959,7 @@ WHERE        (Persons.Username = @username) AND (Persons.Password = @password)";
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
             this._commandCollection[2].CommandText = "INSERT INTO AuthorityLevel\r\n                         (AuthorityName, AccessLevel)" +
-                "\r\nVALUES        (@AuthorityName,@AccessLevel)";
+                "\r\nVALUES        (@AuthorityName,@AccessLevel); \r\n\r\n\r\n\r\n\r\n";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AuthorityName", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "AuthorityName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AccessLevel", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "AccessLevel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2059,31 +2059,39 @@ WHERE        (Persons.Username = @username) AND (Persons.Password = @password)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int _Insert_Registration_Authority(string AuthorityName, int AccessLevel) {
-            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int _Insert_Registration_Authority(DataSet_Persons.PersonAndAuthorityDataTable dataTable, string AuthorityName, int AccessLevel) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
             if ((AuthorityName == null)) {
                 throw new global::System.ArgumentNullException("AuthorityName");
             }
             else {
-                command.Parameters[0].Value = ((string)(AuthorityName));
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(AuthorityName));
             }
-            command.Parameters[1].Value = ((int)(AccessLevel));
-            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                command.Connection.Open();
+            this.Adapter.SelectCommand.Parameters[1].Value = ((int)(AccessLevel));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
             }
-            int returnValue;
-            try {
-                returnValue = command.ExecuteNonQuery();
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    command.Connection.Close();
-                }
-            }
+            int returnValue = this.Adapter.Fill(dataTable);
             return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet_Persons.PersonAndAuthorityDataTable GetDataBy(string AuthorityName, int AccessLevel) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((AuthorityName == null)) {
+                throw new global::System.ArgumentNullException("AuthorityName");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(AuthorityName));
+            }
+            this.Adapter.SelectCommand.Parameters[1].Value = ((int)(AccessLevel));
+            DataSet_Persons.PersonAndAuthorityDataTable dataTable = new DataSet_Persons.PersonAndAuthorityDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
