@@ -14,14 +14,14 @@ namespace WebFormForRegisterDB
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            GridView1.DataSource = svc.viewALL();
+            GridView1.DataSource = svc._VIEWALLFILES();
             GridView1.DataBind();
         }
 
         protected void Btn_Delete_Click(object sender, EventArgs e)
         {
-            svc.deleteRegisteredPersonQuery(Convert.ToInt16(Tb_Delete.Text));
-            
+            svc.deleteRegisteredPersonQuery(Convert.ToInt32(Tb_Delete.Text));
+            svc._DeleteAuthority(Convert.ToInt32(Tb_Delete.Text));
             Page_Load(sender, e);
             ClearControls();
         }

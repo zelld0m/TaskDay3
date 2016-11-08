@@ -125,6 +125,13 @@ namespace WcfServiceForRegisterDB
             throw new NotImplementedException();
         }
 
+        DataSet_Persons.PersonAndAuthorityDataTable IService1._DeleteAuthority(int input_IDtoDelete)
+        {
+            da_personAndAuthority._DeleteAuthorityQuery(input_IDtoDelete);
+            return dt_personAndAuthority;
+            throw new NotImplementedException();
+        }
+
 
 
 

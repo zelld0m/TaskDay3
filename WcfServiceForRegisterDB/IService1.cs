@@ -48,7 +48,9 @@ namespace WcfServiceForRegisterDB
 
         [OperationContract]
         ClassLibraryForRegisterDB.DataSet_Persons.PersonAndAuthorityDataTable _verify(String Username , String Password);
-       
+        [OperationContract]
+        ClassLibraryForRegisterDB.DataSet_Persons.PersonAndAuthorityDataTable _DeleteAuthority(int input_IDtoDelete);
+
         #endregion Authority
 
     }

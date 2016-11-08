@@ -75,6 +75,12 @@
   <wsdl:message name="IService1__verify_OutputMessage">
     <wsdl:part name="parameters" element="tns:_verifyResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1__DeleteAuthority_InputMessage">
+    <wsdl:part name="parameters" element="tns:_DeleteAuthority" />
+  </wsdl:message>
+  <wsdl:message name="IService1__DeleteAuthority_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_DeleteAuthorityResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
@@ -119,6 +125,10 @@
     <wsdl:operation name="_verify">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/_verify" message="tns:IService1__verify_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/_verifyResponse" message="tns:IService1__verify_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="_DeleteAuthority">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/_DeleteAuthority" message="tns:IService1__DeleteAuthority_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/_DeleteAuthorityResponse" message="tns:IService1__DeleteAuthority_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -215,6 +225,15 @@
     </wsdl:operation>
     <wsdl:operation name="_verify">
       <soap:operation soapAction="http://tempuri.org/IService1/_verify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_DeleteAuthority">
+      <soap:operation soapAction="http://tempuri.org/IService1/_DeleteAuthority" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

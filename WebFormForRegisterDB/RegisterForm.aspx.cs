@@ -19,15 +19,10 @@ namespace WebFormForRegisterDB
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-           //svc._insertPerson(Tb_Lname.Text, Tb_FName.Text, Tb_UserName.Text, Tb_Password.Text, Tb_Address.Text);
-            
-           //svc._InsertAuthority(Tb_AuthorityName.Text, Convert.ToInt32(DropDownList1.SelectedValue));
-           svc.insertRegistrationQuery(Tb_Lname.Text, Tb_FName.Text, Tb_UserName.Text, Tb_Password.Text, Tb_Address.Text);
-           
-           svc._InsertAuthority(Tb_AuthorityName.Text, DropDownList1.SelectedIndex);
-            
-           // Page_Load(sender, e);
-            ClearControls();
+          svc.insertRegistrationQuery(Tb_Lname.Text, Tb_FName.Text, Tb_UserName.Text, Tb_Password.Text, Tb_Address.Text);
+          svc._InsertAuthority(Tb_AuthorityName.Text, Convert.ToInt32( DropDownList1.SelectedValue));
+          Page_Load(sender, e);
+          ClearControls();
            
         }
 

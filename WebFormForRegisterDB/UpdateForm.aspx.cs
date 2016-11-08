@@ -19,14 +19,9 @@ namespace WebFormForRegisterDB
 
         protected void BtnUpdate_Click(object sender, EventArgs e)
         {
-            // ERROR // 
             svc.UpdateRegistrationQuery(Tb_LastName.Text, Tb_Fname.Text, Tb_UserName.Text, Tb_Password.Text, Tb_Address.Text, Convert.ToInt32(Tb_IDtoUpdate.Text));
-
-            //GridView1.DataBind();
-            svc._UpdateAuthority( Tb_AuthorityName.Text, Convert.ToInt32( DropDownList1.Text), Convert.ToInt32(Tb_IDtoUpdate.Text));
-            
+            svc._UpdateAuthority( Tb_AuthorityName.Text, Convert.ToInt32(DropDownList1.SelectedValue), Convert.ToInt32(Tb_IDtoUpdate.Text));
             Page_Load(sender, e);
-   
             ClearControls();
         }
 

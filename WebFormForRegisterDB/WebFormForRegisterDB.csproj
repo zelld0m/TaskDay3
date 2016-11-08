@@ -147,6 +147,9 @@
     <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb.ViewUserOnlyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Service References\ServiceReferenceRegisterDb\WebFormForRegisterDB.ServiceReferenceRegisterDb._DeleteAuthorityResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

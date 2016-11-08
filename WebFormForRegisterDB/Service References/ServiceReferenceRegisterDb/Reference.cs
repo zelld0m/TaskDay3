@@ -102,6 +102,14 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_verify", ReplyAction="http://tempuri.org/IService1/_verifyResponse")]
         System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyResponse> _verifyAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb._verifyRequest request);
+        
+        // CODEGEN: Parameter '_DeleteAuthorityResult' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_DeleteAuthority", ReplyAction="http://tempuri.org/IService1/_DeleteAuthorityResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        WebFormForRegisterDB.ServiceReferenceRegisterDb._DeleteAuthorityResponse _DeleteAuthority(WebFormForRegisterDB.ServiceReferenceRegisterDb._DeleteAuthorityRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/_DeleteAuthority", ReplyAction="http://tempuri.org/IService1/_DeleteAuthorityResponse")]
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._DeleteAuthorityResponse> _DeleteAuthorityAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb._DeleteAuthorityRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2016,6 +2024,41 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="_DeleteAuthority", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class _DeleteAuthorityRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
+        public int input_IDtoDelete;
+        
+        public _DeleteAuthorityRequest() {
+        }
+        
+        public _DeleteAuthorityRequest(int input_IDtoDelete) {
+            this.input_IDtoDelete = input_IDtoDelete;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="_DeleteAuthorityResponse", WrapperNamespace="http://tempuri.org/", IsWrapped=true)]
+    public partial class _DeleteAuthorityResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public DataSet_Persons.PersonAndAuthorityDataTable _DeleteAuthorityResult;
+        
+        public _DeleteAuthorityResponse() {
+        }
+        
+        public _DeleteAuthorityResponse(DataSet_Persons.PersonAndAuthorityDataTable _DeleteAuthorityResult) {
+            this._DeleteAuthorityResult = _DeleteAuthorityResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface IService1Channel : WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1, System.ServiceModel.IClientChannel {
     }
@@ -2314,6 +2357,29 @@ namespace WebFormForRegisterDB.ServiceReferenceRegisterDb {
             inValue.Username = Username;
             inValue.Password = Password;
             return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this))._verifyAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WebFormForRegisterDB.ServiceReferenceRegisterDb._DeleteAuthorityResponse WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1._DeleteAuthority(WebFormForRegisterDB.ServiceReferenceRegisterDb._DeleteAuthorityRequest request) {
+            return base.Channel._DeleteAuthority(request);
+        }
+        
+        public DataSet_Persons.PersonAndAuthorityDataTable _DeleteAuthority(int input_IDtoDelete) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._DeleteAuthorityRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb._DeleteAuthorityRequest();
+            inValue.input_IDtoDelete = input_IDtoDelete;
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._DeleteAuthorityResponse retVal = ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this))._DeleteAuthority(inValue);
+            return retVal._DeleteAuthorityResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._DeleteAuthorityResponse> WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1._DeleteAuthorityAsync(WebFormForRegisterDB.ServiceReferenceRegisterDb._DeleteAuthorityRequest request) {
+            return base.Channel._DeleteAuthorityAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WebFormForRegisterDB.ServiceReferenceRegisterDb._DeleteAuthorityResponse> _DeleteAuthorityAsync(int input_IDtoDelete) {
+            WebFormForRegisterDB.ServiceReferenceRegisterDb._DeleteAuthorityRequest inValue = new WebFormForRegisterDB.ServiceReferenceRegisterDb._DeleteAuthorityRequest();
+            inValue.input_IDtoDelete = input_IDtoDelete;
+            return ((WebFormForRegisterDB.ServiceReferenceRegisterDb.IService1)(this))._DeleteAuthorityAsync(inValue);
         }
     }
 }
