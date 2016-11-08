@@ -14,53 +14,37 @@ namespace WebFormForRegisterDB
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            GridView1.DataSource = svc._verify(tb_UserName.Text, Tb_Password.Text);
-            GridView1.DataBind();
-
-
+           
         }
 
         protected void Btn_ViewALL_Click(object sender, EventArgs e)
         {
-            //AccessLevel = Convert.ToInt32(svc._VIEWALLFILES().Rows[0][7]);
-
+            
             int x=0;
-            // x= svc._verify(tb_UserName.Text, Tb_Password.Text).Count();
-            try
+             x= svc._verify(tb_UserName.Text, Tb_Password.Text).Count();
+
+            if (x > 0)
             {
-                x = Convert.ToInt32(svc._verify(tb_UserName.Text, Tb_Password.Text).Rows[0][6]); // AccessLevel
-                if (x > 0)
+                try
                 {
+                    AccessLevel = Convert.ToInt32(svc._verify(tb_UserName.Text, Tb_Password.Text).Rows[0][6]); // AccessLevel
 
-                    AccessLevel = x;
                     ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Congrats PASSWORD AND USERNAME: AccessLevel = " + AccessLevel + " = " + "');", true);
-
-
                     Response.Write("<script>alert('Congrats PASSWORD AND USERNAME: AccessLevel = " + AccessLevel + " ');</script>");
-
-                    //Server.Transfer("Admin2.aspx", true);
-                    Response.Redirect("Admin2.aspx?id=" + AccessLevel, true);
+                    Response.Redirect("Admin2.aspx?id=" + AccessLevel, true);// Correct 
                 }
-
-                else
-                {
-                    ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('ERROR PASSWORD AND USERNAME'" + x + ");", true);
-                }
-
+                catch { }
+            }
+            else
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('ERROR PASSWORD AND USERNAME'" + x + ");", true);
+            }
                 AccessLevel = x;
-                // GridView1.DataSource = svc._verify(tb_UserName.Text, Tb_Password.Text);
                 Page_Load(sender, e);
                 ClearControls();
-            }
-            finally {
-
-            }
-
-
-            }
-      
-       
-        
+        }
+            
+           
         protected void Btn_UserOnly(object sender, EventArgs e)
        
         {

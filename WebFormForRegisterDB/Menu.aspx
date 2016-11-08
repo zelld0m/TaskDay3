@@ -27,9 +27,7 @@
     <div>
     <div class =" container-fluid">
         <div class ="jumbotron" style="border:1px solid #888 ; box-shadow: 0px 2px 5px #ccc;">
-            <h1>Main MENU<asp:GridView ID="GridView1" runat="server">
-                </asp:GridView>
-            </h1>
+            <h1>Main Menu</h1>
 
         </div>
     </div>
