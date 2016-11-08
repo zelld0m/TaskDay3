@@ -152,7 +152,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                                <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Width="129px">
                                     <asp:ListItem Value="1"></asp:ListItem>
                                     <asp:ListItem Value="2"></asp:ListItem>
                                     <asp:ListItem Value="3"></asp:ListItem>
