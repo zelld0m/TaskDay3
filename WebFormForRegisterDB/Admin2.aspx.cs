@@ -15,7 +15,25 @@ namespace WebFormForRegisterDB
         {
             GridView1.DataSource = svc._VIEWALLFILES();
             GridView1.DataBind();
+            _lblAccessLvl.Text = Request.QueryString["id"];
+            int accesslvl = Convert.ToInt32(_lblAccessLvl.Text);
+            admin_config(accesslvl);
         }
+
+        void admin_config (int accesslvl)
+        {
+            switch (accesslvl)
+            {
+                case 1:Btn_DeleteForm.Visible= false ; Btn_ToRegister.Visible = false; Btn_UpdateForm.Visible = false; break;
+                case 2:Btn_DeleteForm.Visible = false; Btn_ToRegister.Visible = false; break;
+                case 3:Btn_DeleteForm.Visible = false; Btn_UpdateForm.Visible = false; break;
+                case 4:Btn_DeleteForm.Visible = false;  break;
+                case 5: break;
+            }
+
+        }
+
+
 
         protected void Btn_UpdateForm_Click(object sender, EventArgs e)
         {

@@ -55,8 +55,9 @@
     <div>
         <div class =" container-fluid">
         <div class ="jumbotron" style="border:1px solid #888 ; box-shadow: 0px 2px 5px #ccc;">
-            <h1>ADMIN</h1>
-
+            <h1>AuthorityLevel:
+            <asp:Label ID="_lblAccessLvl" runat="server" Text="Label"></asp:Label>
+            </h1>
         </div>
     </div>
     

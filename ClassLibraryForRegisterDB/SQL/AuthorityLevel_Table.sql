@@ -13,5 +13,5 @@ AccessLevel int NOT NULL
 
 
 insert into AuthorityLevel(AuthorityName,AccessLevel)
-values('User_1',1)
+values('User_1',5)
 
