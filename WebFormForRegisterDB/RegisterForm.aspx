@@ -43,14 +43,14 @@
         .auto-style14 {
             width: 108px;
         }
-        .auto-style17 {
-            width: 282px;
-        }
         .auto-style18 {
             width: 147px;
         }
         .auto-style19 {
             height: 20px;
+        }
+        .auto-style20 {
+            width: 386px;
         }
     </style>
 </head>
@@ -68,7 +68,7 @@
             <tr>
                 <td class="auto-style12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
                 <td class="auto-style18" rowspan="2">&nbsp;</td>
-                <td class="auto-style17">&nbsp;</td>
+                <td class="auto-style20">&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>
                     <asp:Button ID="Btn_AdminForm" runat="server" OnClick="Button1_Click1" Text="Admin_Form" />
@@ -80,15 +80,13 @@
             <tr>
                 <td class="auto-style12">
                     &nbsp;</td>
-                <td class="auto-style17">
+                <td class="auto-style20">
                     <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                     </asp:GridView>
                 </td>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:GridView ID="GridView2" runat="server">
-                    </asp:GridView>
-                </td>
+                    &nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>

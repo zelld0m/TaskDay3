@@ -22,6 +22,5 @@ Address varchar(255)
 use Registration;
 
 insert into Persons(LastName,FirstName,Username,Password,Address)
-values('aizel','nunag','zell','potato','bangkal','makati'),
-('noel','corales','noel','humanR','shaw','mandaluyong'),
-('lim','elisa','elsie','kap','nova','qc');
+values('aizel','nunag','zell','potato','bangkal'),
+

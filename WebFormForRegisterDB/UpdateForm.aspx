@@ -12,15 +12,12 @@
         .auto-style1 {
             width: 100%;
         }
-        .auto-style9 {
-            width: 129px;
-        }
         .auto-style3 {
             width: 238px;
         }
         .auto-style10 {
             height: 23px;
-            width: 129px;
+            width: 192px;
         }
         .auto-style4 {
             height: 23px;
@@ -53,6 +50,27 @@
         }
         .auto-style22 {
             margin-left: 58px;
+        }
+        .auto-style23 {
+            width: 100%;
+            margin-top: 0px;
+        }
+        .auto-style24 {
+            height: 33px;
+        }
+        .auto-style25 {
+            width: 192px;
+            height: 15px;
+        }
+        .auto-style26 {
+            width: 238px;
+            height: 15px;
+        }
+        .auto-style27 {
+            margin-bottom: 7;
+        }
+        .auto-style28 {
+            width: 192px;
         }
     </style>
 </head>
@@ -115,27 +133,32 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td colspan="2">
-                    &nbsp;</td>
+                <td colspan="2" class="auto-style24">
+                    </td>
             </tr>
         </table>
     
     </div>
-        <table class="auto-style1">
+        <table class="auto-style23">
             <tr>
-                <td class="auto-style9">INPUT ID TO UPDATE</td>
+                <td class="auto-style25">&nbsp;</td>
+                <td class="auto-style26">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style28">INPUT ID TO UPDATE</td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="Tb_IDtoUpdate" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="Tb_IDtoUpdate" runat="server" CssClass="auto-style27"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style9">LastName</td>
+                <td class="auto-style28">LastName</td>
                 <td class="auto-style3">
                     <asp:TextBox ID="Tb_LastName" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style9">FirstName</td>
+                <td class="auto-style28">FirstName</td>
                 <td class="auto-style3">
                     <asp:TextBox ID="Tb_Fname" runat="server"></asp:TextBox>
                 </td>
@@ -147,21 +170,16 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style9">Password</td>
+                <td class="auto-style28">Password</td>
                 <td class="auto-style3">
                     <asp:TextBox ID="Tb_Password" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style9">Address</td>
+                <td class="auto-style28">Address</td>
                 <td class="auto-style3">
                     <asp:TextBox ID="Tb_Address" runat="server"></asp:TextBox>
                 </td>
-            </tr>
-            <tr>
-                <td class="auto-style10">&nbsp;</td>
-                <td class="auto-style4">
-                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style10">Authority Name</td>
@@ -170,7 +188,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style9">Access Level</td>
+                <td class="auto-style28">Access Level</td>
                 <td>
                     <asp:DropDownList ID="DropDownList1" runat="server">
                         <asp:ListItem Value="1"></asp:ListItem>
@@ -182,7 +200,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style28">&nbsp;</td>
                 <td>
                     <asp:Button ID="BtnUpdate" runat="server" OnClick="BtnUpdate_Click" Text="Update" />
                 </td>

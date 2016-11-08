@@ -105,7 +105,9 @@ namespace WcfServiceForRegisterDB
 
         DataSet_Persons.PersonAndAuthorityDataTable IService1._UpdateAuthority(string newAuthorityName, int newAccessLevel, int input_P_ID_toUpdate)
         {
-            
+
+            da_personAndAuthority._Update_Authority_Query(newAccessLevel, newAuthorityName, input_P_ID_toUpdate);
+            return dt_personAndAuthority;
             throw new NotImplementedException();
         }
 

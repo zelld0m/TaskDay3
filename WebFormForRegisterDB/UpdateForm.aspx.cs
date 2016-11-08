@@ -20,12 +20,12 @@ namespace WebFormForRegisterDB
         protected void BtnUpdate_Click(object sender, EventArgs e)
         {
             // ERROR // 
-           // svc.UpdateEntry(Tb_LastName.Text, Tb_Fname.Text, Tb_UserName.Text, Tb_Password.Text, Tb_Address.Text, Tb_City.Text, Convert.ToInt16(Tb_IDtoUpdate.Text));
+            svc.UpdateRegistrationQuery(Tb_LastName.Text, Tb_Fname.Text, Tb_UserName.Text, Tb_Password.Text, Tb_Address.Text, Convert.ToInt32(Tb_IDtoUpdate.Text));
 
             //GridView1.DataBind();
             svc._UpdateAuthority( Tb_AuthorityName.Text, Convert.ToInt32( DropDownList1.Text), Convert.ToInt32(Tb_IDtoUpdate.Text));
             
-           // Page_Load(sender, e);
+            Page_Load(sender, e);
    
             ClearControls();
         }

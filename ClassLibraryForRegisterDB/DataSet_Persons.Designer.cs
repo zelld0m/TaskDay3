@@ -1943,8 +1943,10 @@ namespace ClassLibraryForRegisterDB.DataSet_PersonsTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[5];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        Persons.*, AuthorityLevel.*\r\nFROM            Persons INNER JOIN\r\n  " +
-                "                       AuthorityLevel ON Persons.P_ID = AuthorityLevel.A_Id";
+            this._commandCollection[0].CommandText = @"SELECT        Persons.P_Id, Persons.LastName, Persons.FirstName, Persons.Username, Persons.Password, Persons.Address, AuthorityLevel.A_Id, AuthorityLevel.AuthorityName,
+                          AuthorityLevel.AccessLevel
+FROM            Persons INNER JOIN
+                         AuthorityLevel ON Persons.P_Id = AuthorityLevel.A_Id";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
@@ -1976,12 +1978,12 @@ WHERE        (Persons.Username = @username) AND (Persons.Password = @password)";
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@address", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "Address", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = "UPDATE       Persons\r\nSET                AccessLevel = @NewAccessLevel, Authority" +
-                "Name = @newAuthorityName\r\nWHERE        (A_ID = @A_Id)";
+            this._commandCollection[4].CommandText = "UPDATE       AuthorityLevel\r\nSET                AccessLevel = @NewAccessLevel, Au" +
+                "thorityName = @newAuthorityName\r\nWHERE        (A_Id = @A_Id)";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NewAccessLevel", global::System.Data.SqlDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "AccessLevel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@newAuthorityName", global::System.Data.SqlDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "AuthorityName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@A_Id", global::System.Data.SqlDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NewAccessLevel", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "AccessLevel", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@newAuthorityName", global::System.Data.SqlDbType.VarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, "AuthorityName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@A_Id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "A_Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2151,26 +2153,16 @@ WHERE        (Persons.Username = @username) AND (Persons.Password = @password)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
-        public virtual int _Update_Authority_Query(object NewAccessLevel, object newAuthorityName, object A_Id) {
+        public virtual int _Update_Authority_Query(int NewAccessLevel, string newAuthorityName, int A_Id) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[4];
-            if ((NewAccessLevel == null)) {
-                throw new global::System.ArgumentNullException("NewAccessLevel");
-            }
-            else {
-                command.Parameters[0].Value = ((object)(NewAccessLevel));
-            }
+            command.Parameters[0].Value = ((int)(NewAccessLevel));
             if ((newAuthorityName == null)) {
                 throw new global::System.ArgumentNullException("newAuthorityName");
             }
             else {
-                command.Parameters[1].Value = ((object)(newAuthorityName));
+                command.Parameters[1].Value = ((string)(newAuthorityName));
             }
-            if ((A_Id == null)) {
-                throw new global::System.ArgumentNullException("A_Id");
-            }
-            else {
-                command.Parameters[2].Value = ((object)(A_Id));
-            }
+            command.Parameters[2].Value = ((int)(A_Id));
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {

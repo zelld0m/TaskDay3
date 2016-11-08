@@ -69,7 +69,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="ClassDiagram1.cd" />
     <None Include="DataSet_Persons.xsc">
       <DependentUpon>DataSet_Persons.xsd</DependentUpon>
     </None>
