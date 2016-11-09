@@ -1,2 +1,11 @@
 # TaskDay3
 CrudWebForm
+// IF ERROR 
+
+
+use sql on Sqlserver management studio to  create Database named  Persons and authority
+then 
+change app.config if database cannot be seen
+
+in my computer  this is the correct format of connectionString
+" Data Source=DMNLANUNAG;Initial Catalog=Registration;Integrated Security=True "
