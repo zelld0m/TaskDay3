@@ -68,7 +68,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="DataSet_Persons.xsc">
       <DependentUpon>DataSet_Persons.xsd</DependentUpon>
     </None>
@@ -89,6 +91,7 @@
   <ItemGroup>
     <Content Include="SQL\AuthorityLevel_Table.sql" />
     <Content Include="SQL\Registration_Person_Table.sql" />
+    <Content Include="Instruction.txt" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
