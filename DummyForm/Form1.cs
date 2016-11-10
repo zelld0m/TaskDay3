@@ -13,7 +13,6 @@ namespace DummyForm
 {
     public partial class Form1 : Form
     {
-        
         ClassLibraryForRegisterDB.DAL DAL = new ClassLibraryForRegisterDB.DAL();
         //DummyWcfServiceLibrary1.Service1 DAL = new DummyWcfServiceLibrary1.Service1();
 
@@ -24,7 +23,6 @@ namespace DummyForm
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
             refresh();
         }
         void refresh()
@@ -37,7 +35,6 @@ namespace DummyForm
         private void Btn_search_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource=  DAL.SearchDummy(Tb_Search.Text);
-
             ClearControls();
         }
 
