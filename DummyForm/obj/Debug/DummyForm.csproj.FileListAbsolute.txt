@@ -9,5 +9,3 @@ C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Regist
 C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\DummyForm\obj\Debug\DummyForm.csproj.GenerateResource.Cache
 C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\DummyForm\obj\Debug\DummyForm.exe
 C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\DummyForm\obj\Debug\DummyForm.pdb
-C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\DummyForm\bin\Debug\DummyWcfServiceLibrary1.dll
-C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\DummyForm\bin\Debug\DummyWcfServiceLibrary1.pdb
