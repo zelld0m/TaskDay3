@@ -33,11 +33,11 @@ namespace WebFormForRegisterDB
                     Response.Write("<script>alert('Congrats PASSWORD AND USERNAME: AccessLevel = " + AccessLevel + " ');</script>");
                     Response.Redirect("Admin2.aspx?id=" + AccessLevel, true);// Correct 
                 }
-                catch { }
+                catch { ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('ERROR PASSWORD AND USERNAME);", true); }
             }
             else
             {
-                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('ERROR PASSWORD AND USERNAME'" + x + ");", true);
+                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('ERROR PASSWORD AND USERNAME);", true);
             }
                 AccessLevel = x;
                 Page_Load(sender, e);

@@ -8,3 +8,5 @@ C:\Users\anunag\documents\visual studio 2015\Projects\Task_Day1_Login_Out_Regist
 C:\Users\anunag\documents\visual studio 2015\Projects\Task_Day1_Login_Out_Register\ClassLibraryForRegisterDB\bin\Debug\EntityFramework.xml
 C:\Users\anunag\documents\visual studio 2015\Projects\Task_Day1_Login_Out_Register\ClassLibraryForRegisterDB\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\ClassLibraryForRegisterDB\obj\Debug\ClassLibraryForRegisterDB.csprojResolveAssemblyReference.cache
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\ClassLibraryForRegisterDB\obj\Debug\ClassLibraryForRegisterDB.Form1.resources
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\ClassLibraryForRegisterDB\obj\Debug\ClassLibraryForRegisterDB.csproj.GenerateResource.Cache
