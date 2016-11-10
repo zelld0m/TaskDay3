@@ -14,7 +14,7 @@ namespace DummyForm
     {
         
         ClassLibraryForRegisterDB.DAL DAL = new ClassLibraryForRegisterDB.DAL();
-        
+        //DummyWcfServiceLibrary1.Service1 DAL = new DummyWcfServiceLibrary1.Service1();
 
         public Form1()
         {

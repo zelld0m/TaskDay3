@@ -1,0 +1,8 @@
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\DummyWcfServiceLibrary1\bin\Debug\DummyWcfServiceLibrary1.dll.config
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\DummyWcfServiceLibrary1\bin\Debug\DummyWcfServiceLibrary1.dll
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\DummyWcfServiceLibrary1\bin\Debug\DummyWcfServiceLibrary1.pdb
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\DummyWcfServiceLibrary1\bin\Debug\ClassLibraryForRegisterDB.dll
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\DummyWcfServiceLibrary1\bin\Debug\ClassLibraryForRegisterDB.pdb
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\DummyWcfServiceLibrary1\obj\Debug\DummyWcfServiceLibrary1.csprojResolveAssemblyReference.cache
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\DummyWcfServiceLibrary1\obj\Debug\DummyWcfServiceLibrary1.dll
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\DummyWcfServiceLibrary1\obj\Debug\DummyWcfServiceLibrary1.pdb

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ClassLibraryForRegisterDB">
+      <HintPath>..\WcfServiceForRegisterDB\bin\ClassLibraryForRegisterDB.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -80,9 +83,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibraryForRegisterDB\ClassLibraryForRegisterDB.csproj">
-      <Project>{230c0e68-92f9-481b-95a0-c2f74bedfd3a}</Project>
-      <Name>ClassLibraryForRegisterDB</Name>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DummyWcfServiceLibrary1\DummyWcfServiceLibrary1.csproj">
+      <Project>{abb3fac6-7e70-4a17-a0f8-0a91f7c56236}</Project>
+      <Name>DummyWcfServiceLibrary1</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

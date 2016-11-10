@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormForRegisterDB", "Web
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyForm", "DummyForm\DummyForm.csproj", "{F252712D-183B-4EA4-BB67-AF25FE415130}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyWcfServiceLibrary1", "DummyWcfServiceLibrary1\DummyWcfServiceLibrary1.csproj", "{ABB3FAC6-7E70-4A17-A0F8-0A91F7C56236}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{F252712D-183B-4EA4-BB67-AF25FE415130}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F252712D-183B-4EA4-BB67-AF25FE415130}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F252712D-183B-4EA4-BB67-AF25FE415130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB3FAC6-7E70-4A17-A0F8-0A91F7C56236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB3FAC6-7E70-4A17-A0F8-0A91F7C56236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB3FAC6-7E70-4A17-A0F8-0A91F7C56236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB3FAC6-7E70-4A17-A0F8-0A91F7C56236}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

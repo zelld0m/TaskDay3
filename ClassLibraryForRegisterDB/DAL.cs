@@ -48,8 +48,6 @@ namespace ClassLibraryForRegisterDB
             return dt;   // use  dt DataTable as datasource
                          
         }
-
-
         public DataTable SearchDummy(String inputName)
         {
 
@@ -83,11 +81,9 @@ namespace ClassLibraryForRegisterDB
 
         /*
          * 
- UPDATE       Persons
-SET                LastName = @LastName, FirstName = @FirstName, Username = @Username, Password = @Password, Address = @Address
-WHERE        (P_Id = @P_Id)
-         
-
+                UPDATE       Persons
+                SET        Username = @Username, Password = @Password
+                WHERE        (P_Id = @P_Id)
 
          * /
 
