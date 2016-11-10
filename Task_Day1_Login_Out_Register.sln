@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormForRegisterDB", "Web
 		{34FF2902-880E-4233-98B6-5F92F6B6DB65} = {34FF2902-880E-4233-98B6-5F92F6B6DB65}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyForm", "DummyForm\DummyForm.csproj", "{F252712D-183B-4EA4-BB67-AF25FE415130}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{0209274A-642B-45AE-96DE-3A5BE3420509}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0209274A-642B-45AE-96DE-3A5BE3420509}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0209274A-642B-45AE-96DE-3A5BE3420509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F252712D-183B-4EA4-BB67-AF25FE415130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F252712D-183B-4EA4-BB67-AF25FE415130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F252712D-183B-4EA4-BB67-AF25FE415130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F252712D-183B-4EA4-BB67-AF25FE415130}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
