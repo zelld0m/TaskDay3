@@ -1,0 +1,10 @@
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\ClassLibraryForRegisterDB\bin\Release\ClassLibraryForRegisterDB.dll.config
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\ClassLibraryForRegisterDB\bin\Release\ClassLibraryForRegisterDB.dll
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\ClassLibraryForRegisterDB\bin\Release\ClassLibraryForRegisterDB.pdb
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\ClassLibraryForRegisterDB\bin\Release\EntityFramework.dll
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\ClassLibraryForRegisterDB\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\ClassLibraryForRegisterDB\bin\Release\EntityFramework.xml
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\ClassLibraryForRegisterDB\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\ClassLibraryForRegisterDB\obj\Release\ClassLibraryForRegisterDB.csprojResolveAssemblyReference.cache
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\ClassLibraryForRegisterDB\obj\Release\ClassLibraryForRegisterDB.dll
+C:\Users\anunag\Documents\Visual Studio 2015\Projects\Task_Day1_Login_Out_Register\ClassLibraryForRegisterDB\obj\Release\ClassLibraryForRegisterDB.pdb

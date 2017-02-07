@@ -113,6 +113,7 @@
     <Content Include="css\bootstrap.css.map" />
     <Content Include="css\bootstrap.min.css.map" />
     <Content Include="WebForm2.aspx" />
+    <None Include="Properties\PublishProfiles\PcmSampleProject.pubxml" />
     <None Include="Service References\ServiceReferenceRegisterDb\Service1.wsdl" />
     <None Include="Service References\ServiceReferenceRegisterDb\Service1.xsd">
       <SubType>Designer</SubType>
@@ -255,6 +256,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceReferenceRegisterDb\" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
